@@ -1,0 +1,12 @@
+#ifndef MAX5513_H_INCLUDED
+#define MAX5513_H_INCLUDED
+                                            
+#include <stdio.h>
+#include <hidef.h>      /* common defines and macros */
+#include "derivative.h"      /* derivative-specific definitions */
+
+// http://www.digikey.ca/product-detail/en/MAX5513EUA%2B/MAX5513EUA%2B-ND
+#define    MAX5513_CS     PP3  // CS for driver - SPI Communications  
+
+// stepper motor driver 
+#endif /* L293DD_H_ */
