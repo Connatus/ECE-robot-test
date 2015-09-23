@@ -1,0 +1,2226 @@
+*** EVALUATION ***
+PROGRAM "C:\Users\mfolz-cc\Desktop\ILI9327\bin\Project.abs"
+
+*********************************************************************************************
+TARGET SECTION
+---------------------------------------------------------------------------------------------
+Processor   : Freescale HC12
+Memory Model: SMALL
+File Format : ELF\DWARF 2.0
+Linker      : SmartLinker V-5.0.40 Build 10203, Jul 23 2010
+
+*********************************************************************************************
+FILE SECTION
+---------------------------------------------------------------------------------------------
+main.c.o                                Model: SMALL,         Lang: ANSI-C
+Start12.c.o                             Model: SMALL,         Lang: ANSI-C
+EMBEDDED.C.o (ansisi.lib)               Model: SMALL,         Lang: ANSI-C
+PRINTF.C.o (ansisi.lib)                 Model: SMALL,         Lang: ANSI-C
+rtshc12.c.o (ansisi.lib)                Model: SMALL,         Lang: ANSI-C
+ILI9327.c.o                             Model: SMALL,         Lang: ANSI-C
+Timer.c.o                               Model: SMALL,         Lang: ANSI-C
+LCD_Draw.c.o                            Model: SMALL,         Lang: ANSI-C
+Terminal.c.o                            Model: SMALL,         Lang: ANSI-C
+RS232.c.o                               Model: SMALL,         Lang: ANSI-C
+Test.c.o                                Model: SMALL,         Lang: ANSI-C
+L293DD.c.o                              Model: SMALL,         Lang: ANSI-C
+L2665.c.o                               Model: SMALL,         Lang: ANSI-C
+Encoder.c.o                             Model: SMALL,         Lang: ANSI-C
+RC_Servo.c.o                            Model: SMALL,         Lang: ANSI-C
+Analog.c.o                              Model: SMALL,         Lang: ANSI-C
+error.c.o                               Model: SMALL,         Lang: ANSI-C
+mc9s12c32.c.o                           Model: SMALL,         Lang: ANSI-C
+font.c.o                                Model: SMALL,         Lang: ANSI-C
+Accelerometer.c.o                       Model: SMALL,         Lang: ANSI-C
+menu.c.o                                Model: SMALL,         Lang: ANSI-C
+
+*********************************************************************************************
+STARTUP SECTION
+---------------------------------------------------------------------------------------------
+Entry point: 0xC029 (_Startup)
+_startupData is allocated at 0xC031 and uses 6 Bytes
+extern struct _tagStartup {
+  unsigned nofZeroOut     1
+  _Range   pZeroOut       0x900     212
+  _Copy    *toCopyDownBeg 0xE1D6
+} _startupData;
+
+*********************************************************************************************
+SECTION-ALLOCATION SECTION
+Section Name                    Size  Type     From       To       Segment
+---------------------------------------------------------------------------------------------
+.init                             49     R     0xC000     0xC030   ROM_C000
+.startData                        10     R     0xC031     0xC03A   ROM_C000
+.rodata                          816     R     0xC03B     0xC36A   ROM_C000
+.rodata1                        1297     R     0xC36B     0xC87B   ROM_C000
+.text                           6128     R     0xC87C     0xE06B   ROM_C000
+.copy                             22     R     0xE1D6     0xE1EB   ROM_C000
+.stack                           256   R/W      0x800      0x8FF   RAM
+.data                             16   R/W      0x900      0x90F   RAM
+.abs_section_ffd6                  2     R     0xFFD6     0xFFD7   .absSeg0
+.abs_section_ffe0                  2     R     0xFFE0     0xFFE1   .absSeg1
+.abs_section_ffee                  2     R     0xFFEE     0xFFEF   .absSeg2
+.abs_section_ffec                  2     R     0xFFEC     0xFFED   .absSeg3
+.abs_section_ffe6                  2     R     0xFFE6     0xFFE7   .absSeg4
+.abs_section_ffea                  2     R     0xFFEA     0xFFEB   .absSeg5
+.abs_section_8                     1   N/I        0x8        0x8   .absSeg6
+.abs_section_9                     1   N/I        0x9        0x9   .absSeg7
+.abs_section_a                     1   N/I        0xA        0xA   .absSeg8
+.abs_section_b                     1   N/I        0xB        0xB   .absSeg9
+.abs_section_c                     1   N/I        0xC        0xC   .absSeg10
+.abs_section_d                     1   N/I        0xD        0xD   .absSeg11
+.abs_section_e                     1   N/I        0xE        0xE   .absSeg12
+.abs_section_10                    1   N/I       0x10       0x10   .absSeg13
+.abs_section_11                    1   N/I       0x11       0x11   .absSeg14
+.abs_section_13                    1   N/I       0x13       0x13   .absSeg15
+.abs_section_15                    1   N/I       0x15       0x15   .absSeg16
+.abs_section_16                    1   N/I       0x16       0x16   .absSeg17
+.abs_section_19                    1   N/I       0x19       0x19   .absSeg18
+.abs_section_1c                    1   N/I       0x1C       0x1C   .absSeg19
+.abs_section_1d                    1   N/I       0x1D       0x1D   .absSeg20
+.abs_section_1e                    1   N/I       0x1E       0x1E   .absSeg21
+.abs_section_1f                    1   N/I       0x1F       0x1F   .absSeg22
+.abs_section_20                    1   N/I       0x20       0x20   .absSeg23
+.abs_section_21                    1   N/I       0x21       0x21   .absSeg24
+.abs_section_24                    1   N/I       0x24       0x24   .absSeg25
+.abs_section_25                    1   N/I       0x25       0x25   .absSeg26
+.abs_section_28                    1   N/I       0x28       0x28   .absSeg27
+.abs_section_29                    1   N/I       0x29       0x29   .absSeg28
+.abs_section_2a                    1   N/I       0x2A       0x2A   .absSeg29
+.abs_section_2d                    1   N/I       0x2D       0x2D   .absSeg30
+.abs_section_30                    1   N/I       0x30       0x30   .absSeg31
+.abs_section_34                    1   N/I       0x34       0x34   .absSeg32
+.abs_section_35                    1   N/I       0x35       0x35   .absSeg33
+.abs_section_37                    1   N/I       0x37       0x37   .absSeg34
+.abs_section_38                    1   N/I       0x38       0x38   .absSeg35
+.abs_section_39                    1   N/I       0x39       0x39   .absSeg36
+.abs_section_3a                    1   N/I       0x3A       0x3A   .absSeg37
+.abs_section_3b                    1   N/I       0x3B       0x3B   .absSeg38
+.abs_section_3c                    1   N/I       0x3C       0x3C   .absSeg39
+.abs_section_3f                    1   N/I       0x3F       0x3F   .absSeg40
+.abs_section_40                    1   N/I       0x40       0x40   .absSeg41
+.abs_section_41                    1   N/I       0x41       0x41   .absSeg42
+.abs_section_42                    1   N/I       0x42       0x42   .absSeg43
+.abs_section_43                    1   N/I       0x43       0x43   .absSeg44
+.abs_section_46                    1   N/I       0x46       0x46   .absSeg45
+.abs_section_47                    1   N/I       0x47       0x47   .absSeg46
+.abs_section_48                    1   N/I       0x48       0x48   .absSeg47
+.abs_section_49                    1   N/I       0x49       0x49   .absSeg48
+.abs_section_4a                    1   N/I       0x4A       0x4A   .absSeg49
+.abs_section_4b                    1   N/I       0x4B       0x4B   .absSeg50
+.abs_section_4c                    1   N/I       0x4C       0x4C   .absSeg51
+.abs_section_4d                    1   N/I       0x4D       0x4D   .absSeg52
+.abs_section_4e                    1   N/I       0x4E       0x4E   .absSeg53
+.abs_section_4f                    1   N/I       0x4F       0x4F   .absSeg54
+.abs_section_60                    1   N/I       0x60       0x60   .absSeg55
+.abs_section_61                    1   N/I       0x61       0x61   .absSeg56
+.abs_section_86                    1   N/I       0x86       0x86   .absSeg57
+.abs_section_89                    1   N/I       0x89       0x89   .absSeg58
+.abs_section_8b                    1   N/I       0x8B       0x8B   .absSeg59
+.abs_section_8d                    1   N/I       0x8D       0x8D   .absSeg60
+.abs_section_8f                    1   N/I       0x8F       0x8F   .absSeg61
+.abs_section_ca                    1   N/I       0xCA       0xCA   .absSeg62
+.abs_section_cb                    1   N/I       0xCB       0xCB   .absSeg63
+.abs_section_cc                    1   N/I       0xCC       0xCC   .absSeg64
+.abs_section_cd                    1   N/I       0xCD       0xCD   .absSeg65
+.abs_section_ce                    1   N/I       0xCE       0xCE   .absSeg66
+.abs_section_cf                    1   N/I       0xCF       0xCF   .absSeg67
+.abs_section_d8                    1   N/I       0xD8       0xD8   .absSeg68
+.abs_section_d9                    1   N/I       0xD9       0xD9   .absSeg69
+.abs_section_da                    1   N/I       0xDA       0xDA   .absSeg70
+.abs_section_db                    1   N/I       0xDB       0xDB   .absSeg71
+.abs_section_dd                    1   N/I       0xDD       0xDD   .absSeg72
+.abs_section_e0                    1   N/I       0xE0       0xE0   .absSeg73
+.abs_section_e1                    1   N/I       0xE1       0xE1   .absSeg74
+.abs_section_e2                    1   N/I       0xE2       0xE2   .absSeg75
+.abs_section_e3                    1   N/I       0xE3       0xE3   .absSeg76
+.abs_section_e4                    1   N/I       0xE4       0xE4   .absSeg77
+.abs_section_e5                    1   N/I       0xE5       0xE5   .absSeg78
+.abs_section_e8                    1   N/I       0xE8       0xE8   .absSeg79
+.abs_section_e9                    1   N/I       0xE9       0xE9   .absSeg80
+.abs_section_fe                    1   N/I       0xFE       0xFE   .absSeg81
+.abs_section_100                   1   N/I      0x100      0x100   .absSeg82
+.abs_section_101                   1   N/I      0x101      0x101   .absSeg83
+.abs_section_103                   1   N/I      0x103      0x103   .absSeg84
+.abs_section_104                   1   N/I      0x104      0x104   .absSeg85
+.abs_section_105                   1   N/I      0x105      0x105   .absSeg86
+.abs_section_106                   1   N/I      0x106      0x106   .absSeg87
+.abs_section_140                   1   N/I      0x140      0x140   .absSeg88
+.abs_section_141                   1   N/I      0x141      0x141   .absSeg89
+.abs_section_142                   1   N/I      0x142      0x142   .absSeg90
+.abs_section_143                   1   N/I      0x143      0x143   .absSeg91
+.abs_section_144                   1   N/I      0x144      0x144   .absSeg92
+.abs_section_145                   1   N/I      0x145      0x145   .absSeg93
+.abs_section_146                   1   N/I      0x146      0x146   .absSeg94
+.abs_section_147                   1   N/I      0x147      0x147   .absSeg95
+.abs_section_148                   1   N/I      0x148      0x148   .absSeg96
+.abs_section_149                   1   N/I      0x149      0x149   .absSeg97
+.abs_section_14a                   1   N/I      0x14A      0x14A   .absSeg98
+.abs_section_14b                   1   N/I      0x14B      0x14B   .absSeg99
+.abs_section_14e                   1   N/I      0x14E      0x14E   .absSeg100
+.abs_section_14f                   1   N/I      0x14F      0x14F   .absSeg101
+.abs_section_150                   1   N/I      0x150      0x150   .absSeg102
+.abs_section_151                   1   N/I      0x151      0x151   .absSeg103
+.abs_section_152                   1   N/I      0x152      0x152   .absSeg104
+.abs_section_153                   1   N/I      0x153      0x153   .absSeg105
+.abs_section_154                   1   N/I      0x154      0x154   .absSeg106
+.abs_section_155                   1   N/I      0x155      0x155   .absSeg107
+.abs_section_156                   1   N/I      0x156      0x156   .absSeg108
+.abs_section_157                   1   N/I      0x157      0x157   .absSeg109
+.abs_section_158                   1   N/I      0x158      0x158   .absSeg110
+.abs_section_159                   1   N/I      0x159      0x159   .absSeg111
+.abs_section_15a                   1   N/I      0x15A      0x15A   .absSeg112
+.abs_section_15b                   1   N/I      0x15B      0x15B   .absSeg113
+.abs_section_15c                   1   N/I      0x15C      0x15C   .absSeg114
+.abs_section_15d                   1   N/I      0x15D      0x15D   .absSeg115
+.abs_section_15e                   1   N/I      0x15E      0x15E   .absSeg116
+.abs_section_15f                   1   N/I      0x15F      0x15F   .absSeg117
+.abs_section_160                   1   N/I      0x160      0x160   .absSeg118
+.abs_section_161                   1   N/I      0x161      0x161   .absSeg119
+.abs_section_162                   1   N/I      0x162      0x162   .absSeg120
+.abs_section_163                   1   N/I      0x163      0x163   .absSeg121
+.abs_section_164                   1   N/I      0x164      0x164   .absSeg122
+.abs_section_165                   1   N/I      0x165      0x165   .absSeg123
+.abs_section_166                   1   N/I      0x166      0x166   .absSeg124
+.abs_section_167                   1   N/I      0x167      0x167   .absSeg125
+.abs_section_168                   1   N/I      0x168      0x168   .absSeg126
+.abs_section_169                   1   N/I      0x169      0x169   .absSeg127
+.abs_section_16a                   1   N/I      0x16A      0x16A   .absSeg128
+.abs_section_16b                   1   N/I      0x16B      0x16B   .absSeg129
+.abs_section_16c                   1   N/I      0x16C      0x16C   .absSeg130
+.abs_section_170                   1   N/I      0x170      0x170   .absSeg131
+.abs_section_171                   1   N/I      0x171      0x171   .absSeg132
+.abs_section_172                   1   N/I      0x172      0x172   .absSeg133
+.abs_section_173                   1   N/I      0x173      0x173   .absSeg134
+.abs_section_174                   1   N/I      0x174      0x174   .absSeg135
+.abs_section_175                   1   N/I      0x175      0x175   .absSeg136
+.abs_section_176                   1   N/I      0x176      0x176   .absSeg137
+.abs_section_177                   1   N/I      0x177      0x177   .absSeg138
+.abs_section_178                   1   N/I      0x178      0x178   .absSeg139
+.abs_section_179                   1   N/I      0x179      0x179   .absSeg140
+.abs_section_17a                   1   N/I      0x17A      0x17A   .absSeg141
+.abs_section_17b                   1   N/I      0x17B      0x17B   .absSeg142
+.abs_section_17c                   1   N/I      0x17C      0x17C   .absSeg143
+.abs_section_17d                   1   N/I      0x17D      0x17D   .absSeg144
+.abs_section_240                   1   N/I      0x240      0x240   .absSeg145
+.abs_section_241                   1   N/I      0x241      0x241   .absSeg146
+.abs_section_242                   1   N/I      0x242      0x242   .absSeg147
+.abs_section_243                   1   N/I      0x243      0x243   .absSeg148
+.abs_section_244                   1   N/I      0x244      0x244   .absSeg149
+.abs_section_245                   1   N/I      0x245      0x245   .absSeg150
+.abs_section_247                   1   N/I      0x247      0x247   .absSeg151
+.abs_section_248                   1   N/I      0x248      0x248   .absSeg152
+.abs_section_249                   1   N/I      0x249      0x249   .absSeg153
+.abs_section_24a                   1   N/I      0x24A      0x24A   .absSeg154
+.abs_section_24b                   1   N/I      0x24B      0x24B   .absSeg155
+.abs_section_24c                   1   N/I      0x24C      0x24C   .absSeg156
+.abs_section_24d                   1   N/I      0x24D      0x24D   .absSeg157
+.abs_section_24e                   1   N/I      0x24E      0x24E   .absSeg158
+.abs_section_250                   1   N/I      0x250      0x250   .absSeg159
+.abs_section_251                   1   N/I      0x251      0x251   .absSeg160
+.abs_section_252                   1   N/I      0x252      0x252   .absSeg161
+.abs_section_253                   1   N/I      0x253      0x253   .absSeg162
+.abs_section_254                   1   N/I      0x254      0x254   .absSeg163
+.abs_section_255                   1   N/I      0x255      0x255   .absSeg164
+.abs_section_256                   1   N/I      0x256      0x256   .absSeg165
+.abs_section_258                   1   N/I      0x258      0x258   .absSeg166
+.abs_section_259                   1   N/I      0x259      0x259   .absSeg167
+.abs_section_25a                   1   N/I      0x25A      0x25A   .absSeg168
+.abs_section_25b                   1   N/I      0x25B      0x25B   .absSeg169
+.abs_section_25c                   1   N/I      0x25C      0x25C   .absSeg170
+.abs_section_25d                   1   N/I      0x25D      0x25D   .absSeg171
+.abs_section_25e                   1   N/I      0x25E      0x25E   .absSeg172
+.abs_section_25f                   1   N/I      0x25F      0x25F   .absSeg173
+.abs_section_268                   1   N/I      0x268      0x268   .absSeg174
+.abs_section_269                   1   N/I      0x269      0x269   .absSeg175
+.abs_section_26a                   1   N/I      0x26A      0x26A   .absSeg176
+.abs_section_26b                   1   N/I      0x26B      0x26B   .absSeg177
+.abs_section_26c                   1   N/I      0x26C      0x26C   .absSeg178
+.abs_section_26d                   1   N/I      0x26D      0x26D   .absSeg179
+.abs_section_26e                   1   N/I      0x26E      0x26E   .absSeg180
+.abs_section_26f                   1   N/I      0x26F      0x26F   .absSeg181
+.abs_section_270                   1   N/I      0x270      0x270   .absSeg182
+.abs_section_271                   1   N/I      0x271      0x271   .absSeg183
+.abs_section_272                   1   N/I      0x272      0x272   .absSeg184
+.abs_section_273                   1   N/I      0x273      0x273   .absSeg185
+.abs_section_274                   1   N/I      0x274      0x274   .absSeg186
+.abs_section_275                   1   N/I      0x275      0x275   .absSeg187
+.abs_section_0                     2   N/I        0x0        0x1   .absSeg188
+.abs_section_2                     2   N/I        0x2        0x3   .absSeg189
+.abs_section_1a                    2   N/I       0x1A       0x1B   .absSeg190
+.abs_section_22                    2   N/I       0x22       0x23   .absSeg191
+.abs_section_26                    2   N/I       0x26       0x27   .absSeg192
+.abs_section_2b                    2   N/I       0x2B       0x2C   .absSeg193
+.abs_section_2e                    2   N/I       0x2E       0x2F   .absSeg194
+.abs_section_44                    2   N/I       0x44       0x45   .absSeg195
+.abs_section_50                    2   N/I       0x50       0x51   .absSeg196
+.abs_section_52                    2   N/I       0x52       0x53   .absSeg197
+.abs_section_54                    2   N/I       0x54       0x55   .absSeg198
+.abs_section_56                    2   N/I       0x56       0x57   .absSeg199
+.abs_section_58                    2   N/I       0x58       0x59   .absSeg200
+.abs_section_5a                    2   N/I       0x5A       0x5B   .absSeg201
+.abs_section_5c                    2   N/I       0x5C       0x5D   .absSeg202
+.abs_section_5e                    2   N/I       0x5E       0x5F   .absSeg203
+.abs_section_62                    2   N/I       0x62       0x63   .absSeg204
+.abs_section_82                    2   N/I       0x82       0x83   .absSeg205
+.abs_section_84                    2   N/I       0x84       0x85   .absSeg206
+.abs_section_90                    2   N/I       0x90       0x91   .absSeg207
+.abs_section_92                    2   N/I       0x92       0x93   .absSeg208
+.abs_section_94                    2   N/I       0x94       0x95   .absSeg209
+.abs_section_96                    2   N/I       0x96       0x97   .absSeg210
+.abs_section_98                    2   N/I       0x98       0x99   .absSeg211
+.abs_section_9a                    2   N/I       0x9A       0x9B   .absSeg212
+.abs_section_9c                    2   N/I       0x9C       0x9D   .absSeg213
+.abs_section_9e                    2   N/I       0x9E       0x9F   .absSeg214
+.abs_section_c8                    2   N/I       0xC8       0xC9   .absSeg215
+.abs_section_ec                    2   N/I       0xEC       0xED   .absSeg216
+.abs_section_ee                    2   N/I       0xEE       0xEF   .absSeg217
+.abs_section_f0                    2   N/I       0xF0       0xF1   .absSeg218
+.abs_section_f2                    2   N/I       0xF2       0xF3   .absSeg219
+.abs_section_f4                    2   N/I       0xF4       0xF5   .absSeg220
+.abs_section_f6                    2   N/I       0xF6       0xF7   .absSeg221
+.abs_section_f8                    2   N/I       0xF8       0xF9   .absSeg222
+.abs_section_fa                    2   N/I       0xFA       0xFB   .absSeg223
+.abs_section_fc                    2   N/I       0xFC       0xFD   .absSeg224
+.abs_section_16e                   2   N/I      0x16E      0x16F   .absSeg225
+.abs_section_17e                   2   N/I      0x17E      0x17F   .absSeg226
+.bss                             195   R/W      0x910      0x9D2   RAM
+RUNTIME                          362     R     0xE06C     0xE1D5   ROM_C000
+.common                            1   R/W      0x9D3      0x9D3   RAM
+.vectSeg227_vect                   2     R     0xFFFE     0xFFFF   .vectSeg227
+
+Summary of section sizes per section type:
+READ_ONLY (R):        21FA (dec:     8698)
+READ_WRITE (R/W):      1D4 (dec:      468)
+NO_INIT (N/I):         104 (dec:      260)
+
+*********************************************************************************************
+VECTOR-ALLOCATION SECTION
+    Address     InitValue   InitFunction
+---------------------------------------------------------------------------------------------
+     0xFFFE        0xC029   _Startup
+
+*********************************************************************************************
+OBJECT-ALLOCATION SECTION
+     Name               Module                 Addr   hSize   dSize     Ref    Section   RLIB
+---------------------------------------------------------------------------------------------
+MODULE:                 -- main.c.o --
+- PROCEDURES:
+     main                                      C87C      34      52       1   .text       
+     RS232_INIT                                C8B0      15      21       1   .text       
+     RS232_TEST                                C8C5     193     403       2   .text       
+- VARIABLES:
+     STRING.RS232.outside.of.all.1             C36B      31      49       1   .rodata1    
+     STRING..c.2                               C39C       3       3       1   .rodata1    
+     STRING..LENGTH...d.3                      C39F       C      12       1   .rodata1    
+     STRING...LOAD.BOARD.FUNCTIO.4             C3AB      1A      26       1   .rodata1    
+     STRING..OPENIGN.SERIAL.TERM.5             C3C5      19      25       1   .rodata1    
+     STRING..DC.MOTOR.SHIT.6                   C3DE       F      15       1   .rodata1    
+     STRING..PING.7                            C3ED       6       6       1   .rodata1    
+     STRING..s....d.8                          C3F3       8       8       1   .rodata1    
+     STRING.LEFT.9                             C3FB       5       5       1   .rodata1    
+     STRING..s...d..10                         C400       8       8       1   .rodata1    
+     STRING.RIGHT.11                           C408       6       6       1   .rodata1    
+MODULE:                 -- Start12.c.o --
+- PROCEDURES:
+     Init                                      C000      29      41       1   .init       
+     _Startup                                  C029       8       8       0   .init       
+- VARIABLES:
+     _startupData                              C031       6       6       3   .startData  
+- LABELS:
+     __SEG_END_SSTACK                           900       0       0       1               
+MODULE:                 -- EMBEDDED.C.o (ansisi.lib) --
+- PROCEDURES:
+     printf                                    CA58      13      19      37   .text       
+- VARIABLES:
+MODULE:                 -- PRINTF.C.o (ansisi.lib) --
+- PROCEDURES:
+     vprintf                                   CA6B     478    1144      49   .text       
+     _out                                      CEE3       C      12       9   .text       
+     set_printf                                CEEF       C      12       1   .text       
+- VARIABLES:
+     pow10                                     C03B      28      40       4   .rodata     
+     pow16                                     C063      20      32       4   .rodata     
+     pow8                                      C083      2C      44       4   .rodata     
+     pbuf                                       910       6       6      10   .bss        
+MODULE:                 -- rtshc12.c.o (ansisi.lib) --
+- PROCEDURES:
+     _BSHL                                     E06C       8       8       2   RUNTIME     
+     _BDIVMODU                                 E074       A      10       6   RUNTIME     
+     _LCMP                                     E07E      19      25       3   RUNTIME     
+     _LCMP_P                                   E097      15      21       3   RUNTIME     
+     _LNEG                                     E0AC       D      13       1   RUNTIME     
+     _lDivMod                                  E0B9      BE     190       1   RUNTIME     
+     _LDIVU                                    E177       E      14       1   RUNTIME     
+     _ILSEXT                                   E185       7       7       4   RUNTIME     
+     _CASE_DIRECT_BYTE                         E18C       5       5       1   RUNTIME     
+     _CASE_CHECKED_BYTE                        E191      14      20       2   RUNTIME     
+     _CASE_SEARCH_8                            E1A5      17      23       1   RUNTIME     
+     _CASE_SEARCH_8_BYTE                       E1BC      1A      26       1   RUNTIME     
+- VARIABLES:
+MODULE:                 -- ILI9327.c.o --
+- PROCEDURES:
+     ILI9327_WRITE_DATA                        CEFB       A      10      41   .text       
+     ILI9327_WRITE_COMMAND                     CF05       B      11      17   .text       
+     ILI9327_WRITE_BUS                         CF10      17      23       2   .text       
+     ILI9327_INITALIZE                         CF27     1A5     421      10   .text       
+     ILI9327_ADDRESS_SET                       D0CC      54      84       1   .text       
+     ILI9327_Fill_Rectangle                    D120      6B     107       1   .text       
+- VARIABLES:
+MODULE:                 -- Timer.c.o --
+- PROCEDURES:
+     Timer_INIT                                D18B       8       8       1   .text       
+     Timer_Delay_1ms                           D193      34      52       6   .text       
+     Timer_Delay_10ms                          D1C7      36      54       6   .text       
+- VARIABLES:
+     STRING.TC5...Delay.1ms.Gene.3             C40E      5B      91       1   .rodata1    
+     STRING.TC5..Delay.10ms..Gen.4             C469      5C      92       1   .rodata1    
+MODULE:                 -- LCD_Draw.c.o --
+- PROCEDURES:
+     TERMIO_PutChar                            D1FD       3       3       1   .text       
+     LCD_Settings                              D200      13      19       1   .text       
+     LCD_Fill_Rectangle                        D213      16      22      11   .text       
+     LCD_Write_Line                            D229      A1     161       4   .text       
+     LCD_Write_Char                            D2CA      65     101       2   .text       
+     Color_Convert                             D32F      25      37       1   .text       
+- VARIABLES:
+MODULE:                 -- Terminal.c.o --
+- PROCEDURES:
+     terminalemulator                          D354      6C     108       2   .text       
+     Terminal_Set_Properties                   D3C0      20      32       2   .text       
+     TerminalChar                              D3E0     11D     285       3   .text       
+- VARIABLES:
+     STRING.Microcrap.Winderp..v.1             C4C5      20      32       1   .rodata1    
+     STRING.Command.Line.Debuggi.2             C4E5      2F      47       1   .rodata1    
+     STRING.Microcrap.Winderp..v.3             C514      20      32       1   .rodata1    
+     STRING.Command.Line.Debuggi.4             C534      2F      47       1   .rodata1    
+MODULE:                 -- RS232.c.o --
+- PROCEDURES:
+     RS232_Init                                D4FD      85     133       1   .text       
+     RS232_Write                               D582       A      10       3   .text       
+     RS232_Write_String                        D58C       F      15       1   .text       
+     RS232_Read                                D59B       7       7       1   .text       
+     Process_RS232                             D5A2      4C      76       1   .text       
+     SCIhandler                                D5EE     111     273       2   .text       
+- VARIABLES:
+     STRING.TDRE.OK.1                          C563       8       8       1   .rodata1    
+     STRING.TDRECLEAR.ERROR.2                  C56B      10      16       1   .rodata1    
+     STRING...RS232.Setup.3                    C57B       E      14       1   .rodata1    
+     RS232_Termination_String                   900       4       4       4   .data       
+     RS232_Transmission_String                  904       4       4       4   .data       
+     _Vector_20                                FFD6       2       2       0   .abs_section_ffd6
+     RS232_COMPARE                              9D3       1       1       1   .common     
+     RS232_Com_PORT                             916       1       1       2   .bss        
+     Board_Function                             917       1       1       3   .bss        
+     MessageSequenceNumber                      918       1       1       1   .bss        
+     lDataLength                                919       1       1       1   .bss        
+     RS232_Counter_                             91A       1       1       3   .bss        
+     RS232_Counter                              91B       1       1       5   .bss        
+     RS232_Data_Input                           91C       A      10       2   .bss        
+     data_in                                    926       2       2       1   .bss        
+     RS232_Recieve_Flag                         928       1       1       6   .bss        
+     RS232_Transmission_Flag                    929       1       1      11   .bss        
+     Message_Storage_Counter                    92A       1       1      11   .bss        
+     MessageStorageArray                        92B      28      40       6   .bss        
+     RS232_Processed_Data_Flag                  953       1       1       5   .bss        
+     RS232_COUNTER_OUTSIDE                      954       2       2       2   .bss        
+     Error_Flag_Number                          956       1       1       4   .bss        
+MODULE:                 -- Test.c.o --
+- PROCEDURES:
+     Ping_ECD                                  D6FF      C0     192       1   .text       
+     Camera_ECD                                D7BF      59      89       1   .text       
+     DC_Motor_ECD                              D818      D3     211       1   .text       
+     ASCII_TO_DECIMAL                          D8EB      4E      78       6   .text       
+     RS232_ECD                                 D939      56      86       1   .text       
+     ILI9327_INIT                              D98F       6       6       1   .text       
+- VARIABLES:
+     STRING..d..1                              C589       4       4       1   .rodata1    
+     STRING...d.LENGTH...d..2                  C58D      10      16       1   .rodata1    
+     STRING.....d....d..3                      C59D       C      12       1   .rodata1    
+     STRING...c.4                              C5A9       4       4       1   .rodata1    
+     STRING.ERROR.5                            C5AD       6       6       1   .rodata1    
+     STRING...RIGHT.MOTOR.....SP.6             C5B3      2C      44       1   .rodata1    
+     STRING...LEFT.MOTOR.....SP..7             C5DF      2B      43       1   .rodata1    
+     STRING...INTERRUPTS.DISABLE.16            C60A      1E      30       1   .rodata1    
+     STRING...Begin.Communicatio.17            C628      21      33       1   .rodata1    
+     STRING...BaudRate...lu..18                C649      11      17       1   .rodata1    
+     STRING...Control.Reg.1...d..19            C65A      2A      42       1   .rodata1    
+     STRING...Begin.Input...20                 C684      10      16       1   .rodata1    
+     STRING..c.21                              C694       3       3       1   .rodata1    
+     Local_Message_Storage_Array_RS232          957      28      40      18   .bss        
+     RS232_BAUD_RATE                            97F       4       4       6   .bss        
+MODULE:                 -- L293DD.c.o --
+- PROCEDURES:
+     STMOTOR_COMPLETE_MOTION                   D995      2C      44       2   .text       
+     STMOTOR_INIT                              D9C1      2A      42       1   .text       
+     STMOTOR_FIND_HOME                         D9EB      C5     197       1   .text       
+     STMOTOR_MOVE_DEGREES                      DAB0      15      21       1   .text       
+     TC7handler                                DAC5      92     146       1   .text       
+- VARIABLES:
+     STRING.Stepper.Flag.Not.Set.3             C697      1E      30       1   .rodata1    
+     STRING.Stepper.Count...0.Ch.4             C6B5      23      35       1   .rodata1    
+     Stepper_Motor_Array                        908       8       8       1   .data       
+     Motor_Count                                983       1       1       6   .bss        
+     _Vector_15                                FFE0       2       2       0   .abs_section_ffe0
+     Stepper_Direction_Flag                     984       1       1       9   .bss        
+     Stepper_Steps                              985       2       2       8   .bss        
+     Stepper_WholeStep_Flag                     987       1       1       4   .bss        
+     Stepper_Count_Steps                        988       2       2       6   .bss        
+     Stepper_Speed                              98A       2       2       3   .bss        
+     STEPPER_MOTOR_STEP                         98C       1       1       2   .bss        
+MODULE:                 -- L2665.c.o --
+- PROCEDURES:
+     DCM_INIT                                  DB57      14      20       1   .text       
+     PWM_PERCENTAGE_CONVERSION                 DB6B      20      32       2   .text       
+     PWM_INIT                                  DB8B      1D      29       1   .text       
+- VARIABLES:
+MODULE:                 -- Encoder.c.o --
+- PROCEDURES:
+     Encoder_Init                              DBA8      37      55       1   .text       
+     TC0handler                                DBDF      2B      43       1   .text       
+     TC1handler                                DC0A      2B      43       1   .text       
+     TC4handler                                DC35      12      18       1   .text       
+- VARIABLES:
+     _Vector_8                                 FFEE       2       2       0   .abs_section_ffee
+     _Vector_9                                 FFEC       2       2       0   .abs_section_ffec
+     _Vector_12                                FFE6       2       2       0   .abs_section_ffe6
+     EN_L_Pulse_Flag                            98D       2       2       4   .bss        
+     EN_R_Pulse_Flag                            98F       2       2       4   .bss        
+     L_TIMER                                    991       2       2       2   .bss        
+     R_TIMER                                    993       2       2       2   .bss        
+MODULE:                 -- RC_Servo.c.o --
+- PROCEDURES:
+     RC_SERVO_INIT                             DC47      1B      27       1   .text       
+     RCServo_Degrees_Calulate                  DC62      15      21       1   .text       
+     RCServo_Set_Degrees_Sweep                 DC77      62      98       1   .text       
+     OC2_isr                                   DCD9      2E      46       1   .text       
+- VARIABLES:
+     _Vector_10                                FFEA       2       2       0   .abs_section_ffea
+     OC2_Output_Flag                            995       1       1       3   .bss        
+     Pulse_High                                 996       2       2       5   .bss        
+     Pulse_Low                                  998       2       2       2   .bss        
+MODULE:                 -- Analog.c.o --
+- PROCEDURES:
+     Analog_Init                               DD07      1A      26       1   .text       
+     Analog_Read                               DD21      1D      29       3   .text       
+- VARIABLES:
+MODULE:                 -- error.c.o --
+- PROCEDURES:
+     ERROR_PRINT_SCREEN_2                      DD3E     10B     267       6   .text       
+     ERROR_PRINT_SCREEN                        DE49      FA     250       2   .text       
+- VARIABLES:
+     STRING.FATAL.SOFTWARE.ERROR.1             C6D8      15      21       1   .rodata1    
+     STRING.ERROR.NUMBER...d.2                 C6ED      11      17       1   .rodata1    
+     STRING.SEE.LINUX.ERRONO.DOC.3             C6FE      1F      31       1   .rodata1    
+     STRING..s.4                               C71D       3       3       1   .rodata1    
+     STRING.IT.S.SAFE.TO.PANIC.5               C720      13      19       1   .rodata1    
+     STRING.IT.S.SAFE.TO.PANIC.6               C733      13      19       1   .rodata1    
+     STRING.FATAL.SOFTWARE.ERROR.7             C746      15      21       1   .rodata1    
+     STRING.ERROR.NUMBER...d.8                 C75B      11      17       1   .rodata1    
+     STRING.SEE.LINUX.ERRONO.DOC.9             C76C      1F      31       1   .rodata1    
+     STRING.IT.S.SAFE.TO.PANIC.10              C78B      13      19       1   .rodata1    
+     STRING.IT.S.SAFE.TO.PANIC.11              C79E      13      19       1   .rodata1    
+MODULE:                 -- mc9s12c32.c.o --
+- PROCEDURES:
+- VARIABLES:
+     _PORTE                                       8       1       1       0   .abs_section_8
+     _DDRE                                        9       1       1       0   .abs_section_9
+     _PEAR                                        A       1       1       0   .abs_section_a
+     _MODE                                        B       1       1       0   .abs_section_b
+     _PUCR                                        C       1       1       0   .abs_section_c
+     _RDRIV                                       D       1       1       0   .abs_section_d
+     _EBICTL                                      E       1       1       0   .abs_section_e
+     _INITRM                                     10       1       1       0   .abs_section_10
+     _INITRG                                     11       1       1       0   .abs_section_11
+     _MISC                                       13       1       1       0   .abs_section_13
+     _ITCR                                       15       1       1       0   .abs_section_15
+     _ITEST                                      16       1       1       0   .abs_section_16
+     _VREGCTRL                                   19       1       1       0   .abs_section_19
+     _MEMSIZ0                                    1C       1       1       0   .abs_section_1c
+     _MEMSIZ1                                    1D       1       1       0   .abs_section_1d
+     _INTCR                                      1E       1       1       0   .abs_section_1e
+     _HPRIO                                      1F       1       1       0   .abs_section_1f
+     _DBGC1                                      20       1       1       0   .abs_section_20
+     _DBGSC                                      21       1       1       0   .abs_section_21
+     _DBGCNT                                     24       1       1       0   .abs_section_24
+     _DBGCCX                                     25       1       1       0   .abs_section_25
+     _DBGC2                                      28       1       1       0   .abs_section_28
+     _DBGC3                                      29       1       1       0   .abs_section_29
+     _DBGCAX                                     2A       1       1       0   .abs_section_2a
+     _DBGCBX                                     2D       1       1       0   .abs_section_2d
+     _PPAGE                                      30       1       1       0   .abs_section_30
+     _SYNR                                       34       1       1       0   .abs_section_34
+     _REFDV                                      35       1       1       0   .abs_section_35
+     _CRGFLG                                     37       1       1       0   .abs_section_37
+     _CRGINT                                     38       1       1       0   .abs_section_38
+     _CLKSEL                                     39       1       1       0   .abs_section_39
+     _PLLCTL                                     3A       1       1       0   .abs_section_3a
+     _RTICTL                                     3B       1       1       0   .abs_section_3b
+     _COPCTL                                     3C       1       1       0   .abs_section_3c
+     _ARMCOP                                     3F       1       1       0   .abs_section_3f
+     _TIOS                                       40       1       1       6   .abs_section_40
+     _CFORC                                      41       1       1       0   .abs_section_41
+     _OC7M                                       42       1       1       0   .abs_section_42
+     _OC7D                                       43       1       1       0   .abs_section_43
+     _TSCR1                                      46       1       1       1   .abs_section_46
+     _TTOV                                       47       1       1       0   .abs_section_47
+     _TCTL1                                      48       1       1       4   .abs_section_48
+     _TCTL2                                      49       1       1       0   .abs_section_49
+     _TCTL3                                      4A       1       1       4   .abs_section_4a
+     _TCTL4                                      4B       1       1       0   .abs_section_4b
+     _TIE                                        4C       1       1       3   .abs_section_4c
+     _TSCR2                                      4D       1       1       1   .abs_section_4d
+     _TFLG1                                      4E       1       1       5   .abs_section_4e
+     _TFLG2                                      4F       1       1       0   .abs_section_4f
+     _PACTL                                      60       1       1       0   .abs_section_60
+     _PAFLG                                      61       1       1       0   .abs_section_61
+     _ATDSTAT0                                   86       1       1       1   .abs_section_86
+     _ATDTEST1                                   89       1       1       0   .abs_section_89
+     _ATDSTAT1                                   8B       1       1       1   .abs_section_8b
+     _ATDDIEN                                    8D       1       1       2   .abs_section_8d
+     _PORTAD0                                    8F       1       1       0   .abs_section_8f
+     _SCICR1                                     CA       1       1       2   .abs_section_ca
+     _SCICR2                                     CB       1       1       2   .abs_section_cb
+     _SCISR1                                     CC       1       1       5   .abs_section_cc
+     _SCISR2                                     CD       1       1       0   .abs_section_cd
+     _SCIDRH                                     CE       1       1       0   .abs_section_ce
+     _SCIDRL                                     CF       1       1       3   .abs_section_cf
+     _SPICR1                                     D8       1       1       0   .abs_section_d8
+     _SPICR2                                     D9       1       1       0   .abs_section_d9
+     _SPIBR                                      DA       1       1       0   .abs_section_da
+     _SPISR                                      DB       1       1       0   .abs_section_db
+     _SPIDR                                      DD       1       1       0   .abs_section_dd
+     _PWME                                       E0       1       1       2   .abs_section_e0
+     _PWMPOL                                     E1       1       1       1   .abs_section_e1
+     _PWMCLK                                     E2       1       1       2   .abs_section_e2
+     _PWMPRCLK                                   E3       1       1       1   .abs_section_e3
+     _PWMCAE                                     E4       1       1       0   .abs_section_e4
+     _PWMCTL                                     E5       1       1       0   .abs_section_e5
+     _PWMSCLA                                    E8       1       1       1   .abs_section_e8
+     _PWMSCLB                                    E9       1       1       0   .abs_section_e9
+     _PWMSDN                                     FE       1       1       0   .abs_section_fe
+     _FCLKDIV                                   100       1       1       0   .abs_section_100
+     _FSEC                                      101       1       1       0   .abs_section_101
+     _FCNFG                                     103       1       1       0   .abs_section_103
+     _FPROT                                     104       1       1       0   .abs_section_104
+     _FSTAT                                     105       1       1       0   .abs_section_105
+     _FCMD                                      106       1       1       0   .abs_section_106
+     _CANCTL0                                   140       1       1       0   .abs_section_140
+     _CANCTL1                                   141       1       1       0   .abs_section_141
+     _CANBTR0                                   142       1       1       0   .abs_section_142
+     _CANBTR1                                   143       1       1       0   .abs_section_143
+     _CANRFLG                                   144       1       1       0   .abs_section_144
+     _CANRIER                                   145       1       1       0   .abs_section_145
+     _CANTFLG                                   146       1       1       0   .abs_section_146
+     _CANTIER                                   147       1       1       0   .abs_section_147
+     _CANTARQ                                   148       1       1       0   .abs_section_148
+     _CANTAAK                                   149       1       1       0   .abs_section_149
+     _CANTBSEL                                  14A       1       1       0   .abs_section_14a
+     _CANIDAC                                   14B       1       1       0   .abs_section_14b
+     _CANRXERR                                  14E       1       1       0   .abs_section_14e
+     _CANTXERR                                  14F       1       1       0   .abs_section_14f
+     _CANIDAR0                                  150       1       1       0   .abs_section_150
+     _CANIDAR1                                  151       1       1       0   .abs_section_151
+     _CANIDAR2                                  152       1       1       0   .abs_section_152
+     _CANIDAR3                                  153       1       1       0   .abs_section_153
+     _CANIDMR0                                  154       1       1       0   .abs_section_154
+     _CANIDMR1                                  155       1       1       0   .abs_section_155
+     _CANIDMR2                                  156       1       1       0   .abs_section_156
+     _CANIDMR3                                  157       1       1       0   .abs_section_157
+     _CANIDAR4                                  158       1       1       0   .abs_section_158
+     _CANIDAR5                                  159       1       1       0   .abs_section_159
+     _CANIDAR6                                  15A       1       1       0   .abs_section_15a
+     _CANIDAR7                                  15B       1       1       0   .abs_section_15b
+     _CANIDMR4                                  15C       1       1       0   .abs_section_15c
+     _CANIDMR5                                  15D       1       1       0   .abs_section_15d
+     _CANIDMR6                                  15E       1       1       0   .abs_section_15e
+     _CANIDMR7                                  15F       1       1       0   .abs_section_15f
+     _CANRXIDR0                                 160       1       1       0   .abs_section_160
+     _CANRXIDR1                                 161       1       1       0   .abs_section_161
+     _CANRXIDR2                                 162       1       1       0   .abs_section_162
+     _CANRXIDR3                                 163       1       1       0   .abs_section_163
+     _CANRXDSR0                                 164       1       1       0   .abs_section_164
+     _CANRXDSR1                                 165       1       1       0   .abs_section_165
+     _CANRXDSR2                                 166       1       1       0   .abs_section_166
+     _CANRXDSR3                                 167       1       1       0   .abs_section_167
+     _CANRXDSR4                                 168       1       1       0   .abs_section_168
+     _CANRXDSR5                                 169       1       1       0   .abs_section_169
+     _CANRXDSR6                                 16A       1       1       0   .abs_section_16a
+     _CANRXDSR7                                 16B       1       1       0   .abs_section_16b
+     _CANRXDLR                                  16C       1       1       0   .abs_section_16c
+     _CANTXIDR0                                 170       1       1       0   .abs_section_170
+     _CANTXIDR1                                 171       1       1       0   .abs_section_171
+     _CANTXIDR2                                 172       1       1       0   .abs_section_172
+     _CANTXIDR3                                 173       1       1       0   .abs_section_173
+     _CANTXDSR0                                 174       1       1       0   .abs_section_174
+     _CANTXDSR1                                 175       1       1       0   .abs_section_175
+     _CANTXDSR2                                 176       1       1       0   .abs_section_176
+     _CANTXDSR3                                 177       1       1       0   .abs_section_177
+     _CANTXDSR4                                 178       1       1       0   .abs_section_178
+     _CANTXDSR5                                 179       1       1       0   .abs_section_179
+     _CANTXDSR6                                 17A       1       1       0   .abs_section_17a
+     _CANTXDSR7                                 17B       1       1       0   .abs_section_17b
+     _CANTXDLR                                  17C       1       1       0   .abs_section_17c
+     _CANTXTBPR                                 17D       1       1       0   .abs_section_17d
+     _PTT                                       240       1       1       7   .abs_section_240
+     _PTIT                                      241       1       1       0   .abs_section_241
+     _DDRT                                      242       1       1       1   .abs_section_242
+     _RDRT                                      243       1       1       0   .abs_section_243
+     _PERT                                      244       1       1       0   .abs_section_244
+     _PPST                                      245       1       1       0   .abs_section_245
+     _MODRR                                     247       1       1       0   .abs_section_247
+     _PTS                                       248       1       1       2   .abs_section_248
+     _PTIS                                      249       1       1       0   .abs_section_249
+     _DDRS                                      24A       1       1       0   .abs_section_24a
+     _RDRS                                      24B       1       1       0   .abs_section_24b
+     _PERS                                      24C       1       1       0   .abs_section_24c
+     _PPSS                                      24D       1       1       0   .abs_section_24d
+     _WOMS                                      24E       1       1       0   .abs_section_24e
+     _PTM                                       250       1       1       0   .abs_section_250
+     _PTIM                                      251       1       1       0   .abs_section_251
+     _DDRM                                      252       1       1       0   .abs_section_252
+     _RDRM                                      253       1       1       0   .abs_section_253
+     _PERM                                      254       1       1       0   .abs_section_254
+     _PPSM                                      255       1       1       0   .abs_section_255
+     _WOMM                                      256       1       1       0   .abs_section_256
+     _PTP                                       258       1       1       8   .abs_section_258
+     _PTIP                                      259       1       1       0   .abs_section_259
+     _DDRP                                      25A       1       1       3   .abs_section_25a
+     _RDRP                                      25B       1       1       0   .abs_section_25b
+     _PERP                                      25C       1       1       0   .abs_section_25c
+     _PPSP                                      25D       1       1       0   .abs_section_25d
+     _PIEP                                      25E       1       1       0   .abs_section_25e
+     _PIFP                                      25F       1       1       0   .abs_section_25f
+     _PTJ                                       268       1       1       0   .abs_section_268
+     _PTIJ                                      269       1       1       0   .abs_section_269
+     _DDRJ                                      26A       1       1       0   .abs_section_26a
+     _RDRJ                                      26B       1       1       0   .abs_section_26b
+     _PERJ                                      26C       1       1       0   .abs_section_26c
+     _PPSJ                                      26D       1       1       0   .abs_section_26d
+     _PIEJ                                      26E       1       1       0   .abs_section_26e
+     _PIFJ                                      26F       1       1       0   .abs_section_26f
+     _PTAD                                      270       1       1      21   .abs_section_270
+     _PTIAD                                     271       1       1       0   .abs_section_271
+     _DDRAD                                     272       1       1       2   .abs_section_272
+     _RDRAD                                     273       1       1       0   .abs_section_273
+     _PERAD                                     274       1       1       0   .abs_section_274
+     _PPSAD                                     275       1       1       0   .abs_section_275
+     _PORTAB                                      0       2       2      16   .abs_section_0
+     _DDRAB                                       2       2       2       2   .abs_section_2
+     _PARTID                                     1A       2       2       0   .abs_section_1a
+     _DBGTB                                      22       2       2       0   .abs_section_22
+     _DBGCC                                      26       2       2       0   .abs_section_26
+     _DBGCA                                      2B       2       2       0   .abs_section_2b
+     _DBGCB                                      2E       2       2       0   .abs_section_2e
+     _TCNT                                       44       2       2       4   .abs_section_44
+     _TC0                                        50       2       2       1   .abs_section_50
+     _TC1                                        52       2       2       1   .abs_section_52
+     _TC2                                        54       2       2       3   .abs_section_54
+     _TC3                                        56       2       2       0   .abs_section_56
+     _TC4                                        58       2       2       1   .abs_section_58
+     _TC5                                        5A       2       2       2   .abs_section_5a
+     _TC6                                        5C       2       2       0   .abs_section_5c
+     _TC7                                        5E       2       2       1   .abs_section_5e
+     _PACNT                                      62       2       2       0   .abs_section_62
+     _ATDCTL23                                   82       2       2       2   .abs_section_82
+     _ATDCTL45                                   84       2       2       3   .abs_section_84
+     _ATDDR0                                     90       2       2       1   .abs_section_90
+     _ATDDR1                                     92       2       2       0   .abs_section_92
+     _ATDDR2                                     94       2       2       0   .abs_section_94
+     _ATDDR3                                     96       2       2       0   .abs_section_96
+     _ATDDR4                                     98       2       2       0   .abs_section_98
+     _ATDDR5                                     9A       2       2       0   .abs_section_9a
+     _ATDDR6                                     9C       2       2       0   .abs_section_9c
+     _ATDDR7                                     9E       2       2       0   .abs_section_9e
+     _SCIBD                                      C8       2       2       2   .abs_section_c8
+     _PWMCNT01                                   EC       2       2       0   .abs_section_ec
+     _PWMCNT23                                   EE       2       2       0   .abs_section_ee
+     _PWMCNT45                                   F0       2       2       2   .abs_section_f0
+     _PWMPER01                                   F2       2       2       0   .abs_section_f2
+     _PWMPER23                                   F4       2       2       0   .abs_section_f4
+     _PWMPER45                                   F6       2       2       2   .abs_section_f6
+     _PWMDTY01                                   F8       2       2       0   .abs_section_f8
+     _PWMDTY23                                   FA       2       2       0   .abs_section_fa
+     _PWMDTY45                                   FC       2       2       2   .abs_section_fc
+     _CANRXTSR                                  16E       2       2       0   .abs_section_16e
+     _CANTXTSR                                  17E       2       2       0   .abs_section_17e
+MODULE:                 -- font.c.o --
+- PROCEDURES:
+- VARIABLES:
+     font                                      C0AF     2BC     700       1   .rodata     
+MODULE:                 -- Accelerometer.c.o --
+- PROCEDURES:
+     Accelerometer_INIT                        DF43      A2     162       1   .text       
+     Accelerometer_Read                        DFE5      87     135       1   .text       
+- VARIABLES:
+     STRING.Please.Allow.the.Boa.1             C7B1      36      54       1   .rodata1    
+     STRING...x..d.y..d.z..d.2                 C7E7      11      17       1   .rodata1    
+     STRING.Analog.Or.Accel.Init.3             C7F8      2B      43       1   .rodata1    
+     STRING.Calibration.Error.pl.4             C823      2F      47       1   .rodata1    
+     STRING....Steady.state.valu.5             C852      2A      42       1   .rodata1    
+     anal_x                                     99A       2       2      11   .bss        
+     Accel_X_Zero                               99C       2       2       2   .bss        
+     anal_y                                     99E       2       2      11   .bss        
+     Accel_Y_Zero                               9A0       2       2       2   .bss        
+     anal_z                                     9A2       2       2      10   .bss        
+     Accel_Z_Zero                               9A4       2       2       1   .bss        
+MODULE:                 -- menu.c.o --
+- PROCEDURES:
+- VARIABLES:
+     TerminalProperties                         9A6       A      10      21   .bss        
+     Current                                    9B0      12      18      20   .bss        
+     Properties                                 9C2       7       7       5   .bss        
+     L_Counter                                  9C9       2       2       5   .bss        
+     R_Counter                                  9CB       2       2       5   .bss        
+     WATCH_DOG_FLAG                             9CD       2       2       4   .bss        
+     WATCH_L_COUNTER                            9CF       2       2       2   .bss        
+     WATCH_R_COUNTER                            9D1       2       2       2   .bss        
+
+*********************************************************************************************
+MODULE STATISTIC
+  Name                                      Data   Code  Const
+---------------------------------------------------------------------------------------------
+  main.c.o                                     0    476    163
+  Start12.c.o                                  0     49      0
+  EMBEDDED.C.o (ansisi.lib)                    0     19      0
+  PRINTF.C.o (ansisi.lib)                      6   1168    116
+  rtshc12.c.o (ansisi.lib)                     0    362      0
+  ILI9327.c.o                                  0    656      0
+  Timer.c.o                                    0    114    183
+  LCD_Draw.c.o                                 0    343      0
+  Terminal.c.o                                 0    425    158
+  RS232.c.o                                   74    514     40
+  Test.c.o                                    44    662    270
+  L293DD.c.o                                  18    450     67
+  L2665.c.o                                    0     81      0
+  Encoder.c.o                                  8    159      6
+  RC_Servo.c.o                                 5    192      2
+  Analog.c.o                                   0     55      0
+  error.c.o                                    0    517    217
+  mc9s12c32.c.o                              260      0      0
+  font.c.o                                     0      0    700
+  Accelerometer.c.o                           12    297    203
+  menu.c.o                                    45      0      0
+  other                                      256     12     22
+
+*********************************************************************************************
+SECTION USE IN OBJECT-ALLOCATION SECTION
+---------------------------------------------------------------------------------------------
+SECTION: ".text"
+  main RS232_INIT RS232_TEST printf vprintf _out set_printf ILI9327_WRITE_DATA 
+  ILI9327_WRITE_COMMAND ILI9327_WRITE_BUS ILI9327_INITALIZE ILI9327_ADDRESS_SET 
+  ILI9327_Fill_Rectangle Timer_INIT Timer_Delay_1ms Timer_Delay_10ms 
+  TERMIO_PutChar LCD_Settings LCD_Fill_Rectangle LCD_Write_Line LCD_Write_Char 
+  Color_Convert terminalemulator Terminal_Set_Properties TerminalChar 
+  RS232_Init RS232_Write RS232_Write_String RS232_Read Process_RS232 SCIhandler 
+  Ping_ECD Camera_ECD DC_Motor_ECD ASCII_TO_DECIMAL RS232_ECD ILI9327_INIT 
+  STMOTOR_COMPLETE_MOTION STMOTOR_INIT STMOTOR_FIND_HOME STMOTOR_MOVE_DEGREES 
+  TC7handler DCM_INIT PWM_PERCENTAGE_CONVERSION PWM_INIT Encoder_Init 
+  TC0handler TC1handler TC4handler RC_SERVO_INIT RCServo_Degrees_Calulate 
+  RCServo_Set_Degrees_Sweep OC2_isr Analog_Init Analog_Read 
+  ERROR_PRINT_SCREEN_2 ERROR_PRINT_SCREEN Accelerometer_INIT Accelerometer_Read 
+SECTION: ".data"
+  RS232_Termination_String RS232_Transmission_String Stepper_Motor_Array 
+SECTION: ".bss"
+  pbuf RS232_Com_PORT Board_Function MessageSequenceNumber lDataLength 
+  RS232_Counter_ RS232_Counter RS232_Data_Input data_in RS232_Recieve_Flag 
+  RS232_Transmission_Flag Message_Storage_Counter MessageStorageArray 
+  RS232_Processed_Data_Flag RS232_COUNTER_OUTSIDE Error_Flag_Number 
+  Local_Message_Storage_Array_RS232 RS232_BAUD_RATE Motor_Count 
+  Stepper_Direction_Flag Stepper_Steps Stepper_WholeStep_Flag 
+  Stepper_Count_Steps Stepper_Speed STEPPER_MOTOR_STEP EN_L_Pulse_Flag 
+  EN_R_Pulse_Flag L_TIMER R_TIMER OC2_Output_Flag Pulse_High Pulse_Low anal_x 
+  Accel_X_Zero anal_y Accel_Y_Zero anal_z Accel_Z_Zero TerminalProperties 
+  Current Properties L_Counter R_Counter WATCH_DOG_FLAG WATCH_L_COUNTER 
+  WATCH_R_COUNTER 
+SECTION: ".init"
+  Init _Startup 
+SECTION: ".rodata"
+  pow10 pow16 pow8 font 
+SECTION: ".rodata1"
+  STRING.RS232.outside.of.all.1 STRING..c.2 STRING..LENGTH...d.3 
+  STRING...LOAD.BOARD.FUNCTIO.4 STRING..OPENIGN.SERIAL.TERM.5 
+  STRING..DC.MOTOR.SHIT.6 STRING..PING.7 STRING..s....d.8 STRING.LEFT.9 
+  STRING..s...d..10 STRING.RIGHT.11 STRING.TC5...Delay.1ms.Gene.3 
+  STRING.TC5..Delay.10ms..Gen.4 STRING.Microcrap.Winderp..v.1 
+  STRING.Command.Line.Debuggi.2 STRING.Microcrap.Winderp..v.3 
+  STRING.Command.Line.Debuggi.4 STRING.TDRE.OK.1 STRING.TDRECLEAR.ERROR.2 
+  STRING...RS232.Setup.3 STRING..d..1 STRING...d.LENGTH...d..2 
+  STRING.....d....d..3 STRING...c.4 STRING.ERROR.5 
+  STRING...RIGHT.MOTOR.....SP.6 STRING...LEFT.MOTOR.....SP..7 
+  STRING...INTERRUPTS.DISABLE.16 STRING...Begin.Communicatio.17 
+  STRING...BaudRate...lu..18 STRING...Control.Reg.1...d..19 
+  STRING...Begin.Input...20 STRING..c.21 STRING.Stepper.Flag.Not.Set.3 
+  STRING.Stepper.Count...0.Ch.4 STRING.FATAL.SOFTWARE.ERROR.1 
+  STRING.ERROR.NUMBER...d.2 STRING.SEE.LINUX.ERRONO.DOC.3 STRING..s.4 
+  STRING.IT.S.SAFE.TO.PANIC.5 STRING.IT.S.SAFE.TO.PANIC.6 
+  STRING.FATAL.SOFTWARE.ERROR.7 STRING.ERROR.NUMBER...d.8 
+  STRING.SEE.LINUX.ERRONO.DOC.9 STRING.IT.S.SAFE.TO.PANIC.10 
+  STRING.IT.S.SAFE.TO.PANIC.11 STRING.Please.Allow.the.Boa.1 
+  STRING...x..d.y..d.z..d.2 STRING.Analog.Or.Accel.Init.3 
+  STRING.Calibration.Error.pl.4 STRING....Steady.state.valu.5 
+SECTION: "RUNTIME"
+  _BSHL _BDIVMODU _LCMP _LCMP_P _LNEG _lDivMod _LDIVU _ILSEXT 
+  _CASE_DIRECT_BYTE _CASE_CHECKED_BYTE _CASE_SEARCH_8 _CASE_SEARCH_8_BYTE 
+SECTION: ".common"
+  RS232_COMPARE 
+SECTION: ".abs_section_ffd6"
+  _Vector_20 
+SECTION: ".abs_section_ffe0"
+  _Vector_15 
+SECTION: ".abs_section_ffee"
+  _Vector_8 
+SECTION: ".abs_section_ffec"
+  _Vector_9 
+SECTION: ".abs_section_ffe6"
+  _Vector_12 
+SECTION: ".abs_section_ffea"
+  _Vector_10 
+SECTION: ".abs_section_8"
+  _PORTE 
+SECTION: ".abs_section_9"
+  _DDRE 
+SECTION: ".abs_section_a"
+  _PEAR 
+SECTION: ".abs_section_b"
+  _MODE 
+SECTION: ".abs_section_c"
+  _PUCR 
+SECTION: ".abs_section_d"
+  _RDRIV 
+SECTION: ".abs_section_e"
+  _EBICTL 
+SECTION: ".abs_section_10"
+  _INITRM 
+SECTION: ".abs_section_11"
+  _INITRG 
+SECTION: ".abs_section_13"
+  _MISC 
+SECTION: ".abs_section_15"
+  _ITCR 
+SECTION: ".abs_section_16"
+  _ITEST 
+SECTION: ".abs_section_19"
+  _VREGCTRL 
+SECTION: ".abs_section_1c"
+  _MEMSIZ0 
+SECTION: ".abs_section_1d"
+  _MEMSIZ1 
+SECTION: ".abs_section_1e"
+  _INTCR 
+SECTION: ".abs_section_1f"
+  _HPRIO 
+SECTION: ".abs_section_20"
+  _DBGC1 
+SECTION: ".abs_section_21"
+  _DBGSC 
+SECTION: ".abs_section_24"
+  _DBGCNT 
+SECTION: ".abs_section_25"
+  _DBGCCX 
+SECTION: ".abs_section_28"
+  _DBGC2 
+SECTION: ".abs_section_29"
+  _DBGC3 
+SECTION: ".abs_section_2a"
+  _DBGCAX 
+SECTION: ".abs_section_2d"
+  _DBGCBX 
+SECTION: ".abs_section_30"
+  _PPAGE 
+SECTION: ".abs_section_34"
+  _SYNR 
+SECTION: ".abs_section_35"
+  _REFDV 
+SECTION: ".abs_section_37"
+  _CRGFLG 
+SECTION: ".abs_section_38"
+  _CRGINT 
+SECTION: ".abs_section_39"
+  _CLKSEL 
+SECTION: ".abs_section_3a"
+  _PLLCTL 
+SECTION: ".abs_section_3b"
+  _RTICTL 
+SECTION: ".abs_section_3c"
+  _COPCTL 
+SECTION: ".abs_section_3f"
+  _ARMCOP 
+SECTION: ".abs_section_40"
+  _TIOS 
+SECTION: ".abs_section_41"
+  _CFORC 
+SECTION: ".abs_section_42"
+  _OC7M 
+SECTION: ".abs_section_43"
+  _OC7D 
+SECTION: ".abs_section_46"
+  _TSCR1 
+SECTION: ".abs_section_47"
+  _TTOV 
+SECTION: ".abs_section_48"
+  _TCTL1 
+SECTION: ".abs_section_49"
+  _TCTL2 
+SECTION: ".abs_section_4a"
+  _TCTL3 
+SECTION: ".abs_section_4b"
+  _TCTL4 
+SECTION: ".abs_section_4c"
+  _TIE 
+SECTION: ".abs_section_4d"
+  _TSCR2 
+SECTION: ".abs_section_4e"
+  _TFLG1 
+SECTION: ".abs_section_4f"
+  _TFLG2 
+SECTION: ".abs_section_60"
+  _PACTL 
+SECTION: ".abs_section_61"
+  _PAFLG 
+SECTION: ".abs_section_86"
+  _ATDSTAT0 
+SECTION: ".abs_section_89"
+  _ATDTEST1 
+SECTION: ".abs_section_8b"
+  _ATDSTAT1 
+SECTION: ".abs_section_8d"
+  _ATDDIEN 
+SECTION: ".abs_section_8f"
+  _PORTAD0 
+SECTION: ".abs_section_ca"
+  _SCICR1 
+SECTION: ".abs_section_cb"
+  _SCICR2 
+SECTION: ".abs_section_cc"
+  _SCISR1 
+SECTION: ".abs_section_cd"
+  _SCISR2 
+SECTION: ".abs_section_ce"
+  _SCIDRH 
+SECTION: ".abs_section_cf"
+  _SCIDRL 
+SECTION: ".abs_section_d8"
+  _SPICR1 
+SECTION: ".abs_section_d9"
+  _SPICR2 
+SECTION: ".abs_section_da"
+  _SPIBR 
+SECTION: ".abs_section_db"
+  _SPISR 
+SECTION: ".abs_section_dd"
+  _SPIDR 
+SECTION: ".abs_section_e0"
+  _PWME 
+SECTION: ".abs_section_e1"
+  _PWMPOL 
+SECTION: ".abs_section_e2"
+  _PWMCLK 
+SECTION: ".abs_section_e3"
+  _PWMPRCLK 
+SECTION: ".abs_section_e4"
+  _PWMCAE 
+SECTION: ".abs_section_e5"
+  _PWMCTL 
+SECTION: ".abs_section_e8"
+  _PWMSCLA 
+SECTION: ".abs_section_e9"
+  _PWMSCLB 
+SECTION: ".abs_section_fe"
+  _PWMSDN 
+SECTION: ".abs_section_100"
+  _FCLKDIV 
+SECTION: ".abs_section_101"
+  _FSEC 
+SECTION: ".abs_section_103"
+  _FCNFG 
+SECTION: ".abs_section_104"
+  _FPROT 
+SECTION: ".abs_section_105"
+  _FSTAT 
+SECTION: ".abs_section_106"
+  _FCMD 
+SECTION: ".abs_section_140"
+  _CANCTL0 
+SECTION: ".abs_section_141"
+  _CANCTL1 
+SECTION: ".abs_section_142"
+  _CANBTR0 
+SECTION: ".abs_section_143"
+  _CANBTR1 
+SECTION: ".abs_section_144"
+  _CANRFLG 
+SECTION: ".abs_section_145"
+  _CANRIER 
+SECTION: ".abs_section_146"
+  _CANTFLG 
+SECTION: ".abs_section_147"
+  _CANTIER 
+SECTION: ".abs_section_148"
+  _CANTARQ 
+SECTION: ".abs_section_149"
+  _CANTAAK 
+SECTION: ".abs_section_14a"
+  _CANTBSEL 
+SECTION: ".abs_section_14b"
+  _CANIDAC 
+SECTION: ".abs_section_14e"
+  _CANRXERR 
+SECTION: ".abs_section_14f"
+  _CANTXERR 
+SECTION: ".abs_section_150"
+  _CANIDAR0 
+SECTION: ".abs_section_151"
+  _CANIDAR1 
+SECTION: ".abs_section_152"
+  _CANIDAR2 
+SECTION: ".abs_section_153"
+  _CANIDAR3 
+SECTION: ".abs_section_154"
+  _CANIDMR0 
+SECTION: ".abs_section_155"
+  _CANIDMR1 
+SECTION: ".abs_section_156"
+  _CANIDMR2 
+SECTION: ".abs_section_157"
+  _CANIDMR3 
+SECTION: ".abs_section_158"
+  _CANIDAR4 
+SECTION: ".abs_section_159"
+  _CANIDAR5 
+SECTION: ".abs_section_15a"
+  _CANIDAR6 
+SECTION: ".abs_section_15b"
+  _CANIDAR7 
+SECTION: ".abs_section_15c"
+  _CANIDMR4 
+SECTION: ".abs_section_15d"
+  _CANIDMR5 
+SECTION: ".abs_section_15e"
+  _CANIDMR6 
+SECTION: ".abs_section_15f"
+  _CANIDMR7 
+SECTION: ".abs_section_160"
+  _CANRXIDR0 
+SECTION: ".abs_section_161"
+  _CANRXIDR1 
+SECTION: ".abs_section_162"
+  _CANRXIDR2 
+SECTION: ".abs_section_163"
+  _CANRXIDR3 
+SECTION: ".abs_section_164"
+  _CANRXDSR0 
+SECTION: ".abs_section_165"
+  _CANRXDSR1 
+SECTION: ".abs_section_166"
+  _CANRXDSR2 
+SECTION: ".abs_section_167"
+  _CANRXDSR3 
+SECTION: ".abs_section_168"
+  _CANRXDSR4 
+SECTION: ".abs_section_169"
+  _CANRXDSR5 
+SECTION: ".abs_section_16a"
+  _CANRXDSR6 
+SECTION: ".abs_section_16b"
+  _CANRXDSR7 
+SECTION: ".abs_section_16c"
+  _CANRXDLR 
+SECTION: ".abs_section_170"
+  _CANTXIDR0 
+SECTION: ".abs_section_171"
+  _CANTXIDR1 
+SECTION: ".abs_section_172"
+  _CANTXIDR2 
+SECTION: ".abs_section_173"
+  _CANTXIDR3 
+SECTION: ".abs_section_174"
+  _CANTXDSR0 
+SECTION: ".abs_section_175"
+  _CANTXDSR1 
+SECTION: ".abs_section_176"
+  _CANTXDSR2 
+SECTION: ".abs_section_177"
+  _CANTXDSR3 
+SECTION: ".abs_section_178"
+  _CANTXDSR4 
+SECTION: ".abs_section_179"
+  _CANTXDSR5 
+SECTION: ".abs_section_17a"
+  _CANTXDSR6 
+SECTION: ".abs_section_17b"
+  _CANTXDSR7 
+SECTION: ".abs_section_17c"
+  _CANTXDLR 
+SECTION: ".abs_section_17d"
+  _CANTXTBPR 
+SECTION: ".abs_section_240"
+  _PTT 
+SECTION: ".abs_section_241"
+  _PTIT 
+SECTION: ".abs_section_242"
+  _DDRT 
+SECTION: ".abs_section_243"
+  _RDRT 
+SECTION: ".abs_section_244"
+  _PERT 
+SECTION: ".abs_section_245"
+  _PPST 
+SECTION: ".abs_section_247"
+  _MODRR 
+SECTION: ".abs_section_248"
+  _PTS 
+SECTION: ".abs_section_249"
+  _PTIS 
+SECTION: ".abs_section_24a"
+  _DDRS 
+SECTION: ".abs_section_24b"
+  _RDRS 
+SECTION: ".abs_section_24c"
+  _PERS 
+SECTION: ".abs_section_24d"
+  _PPSS 
+SECTION: ".abs_section_24e"
+  _WOMS 
+SECTION: ".abs_section_250"
+  _PTM 
+SECTION: ".abs_section_251"
+  _PTIM 
+SECTION: ".abs_section_252"
+  _DDRM 
+SECTION: ".abs_section_253"
+  _RDRM 
+SECTION: ".abs_section_254"
+  _PERM 
+SECTION: ".abs_section_255"
+  _PPSM 
+SECTION: ".abs_section_256"
+  _WOMM 
+SECTION: ".abs_section_258"
+  _PTP 
+SECTION: ".abs_section_259"
+  _PTIP 
+SECTION: ".abs_section_25a"
+  _DDRP 
+SECTION: ".abs_section_25b"
+  _RDRP 
+SECTION: ".abs_section_25c"
+  _PERP 
+SECTION: ".abs_section_25d"
+  _PPSP 
+SECTION: ".abs_section_25e"
+  _PIEP 
+SECTION: ".abs_section_25f"
+  _PIFP 
+SECTION: ".abs_section_268"
+  _PTJ 
+SECTION: ".abs_section_269"
+  _PTIJ 
+SECTION: ".abs_section_26a"
+  _DDRJ 
+SECTION: ".abs_section_26b"
+  _RDRJ 
+SECTION: ".abs_section_26c"
+  _PERJ 
+SECTION: ".abs_section_26d"
+  _PPSJ 
+SECTION: ".abs_section_26e"
+  _PIEJ 
+SECTION: ".abs_section_26f"
+  _PIFJ 
+SECTION: ".abs_section_270"
+  _PTAD 
+SECTION: ".abs_section_271"
+  _PTIAD 
+SECTION: ".abs_section_272"
+  _DDRAD 
+SECTION: ".abs_section_273"
+  _RDRAD 
+SECTION: ".abs_section_274"
+  _PERAD 
+SECTION: ".abs_section_275"
+  _PPSAD 
+SECTION: ".abs_section_0"
+  _PORTAB 
+SECTION: ".abs_section_2"
+  _DDRAB 
+SECTION: ".abs_section_1a"
+  _PARTID 
+SECTION: ".abs_section_22"
+  _DBGTB 
+SECTION: ".abs_section_26"
+  _DBGCC 
+SECTION: ".abs_section_2b"
+  _DBGCA 
+SECTION: ".abs_section_2e"
+  _DBGCB 
+SECTION: ".abs_section_44"
+  _TCNT 
+SECTION: ".abs_section_50"
+  _TC0 
+SECTION: ".abs_section_52"
+  _TC1 
+SECTION: ".abs_section_54"
+  _TC2 
+SECTION: ".abs_section_56"
+  _TC3 
+SECTION: ".abs_section_58"
+  _TC4 
+SECTION: ".abs_section_5a"
+  _TC5 
+SECTION: ".abs_section_5c"
+  _TC6 
+SECTION: ".abs_section_5e"
+  _TC7 
+SECTION: ".abs_section_62"
+  _PACNT 
+SECTION: ".abs_section_82"
+  _ATDCTL23 
+SECTION: ".abs_section_84"
+  _ATDCTL45 
+SECTION: ".abs_section_90"
+  _ATDDR0 
+SECTION: ".abs_section_92"
+  _ATDDR1 
+SECTION: ".abs_section_94"
+  _ATDDR2 
+SECTION: ".abs_section_96"
+  _ATDDR3 
+SECTION: ".abs_section_98"
+  _ATDDR4 
+SECTION: ".abs_section_9a"
+  _ATDDR5 
+SECTION: ".abs_section_9c"
+  _ATDDR6 
+SECTION: ".abs_section_9e"
+  _ATDDR7 
+SECTION: ".abs_section_c8"
+  _SCIBD 
+SECTION: ".abs_section_ec"
+  _PWMCNT01 
+SECTION: ".abs_section_ee"
+  _PWMCNT23 
+SECTION: ".abs_section_f0"
+  _PWMCNT45 
+SECTION: ".abs_section_f2"
+  _PWMPER01 
+SECTION: ".abs_section_f4"
+  _PWMPER23 
+SECTION: ".abs_section_f6"
+  _PWMPER45 
+SECTION: ".abs_section_f8"
+  _PWMDTY01 
+SECTION: ".abs_section_fa"
+  _PWMDTY23 
+SECTION: ".abs_section_fc"
+  _PWMDTY45 
+SECTION: ".abs_section_16e"
+  _CANRXTSR 
+SECTION: ".abs_section_17e"
+  _CANTXTSR 
+
+*********************************************************************************************
+OBJECT LIST SORTED BY ADDRESS
+     Name                                      Addr   hSize   dSize     Ref    Section   RLIB
+---------------------------------------------------------------------------------------------
+     _PORTAB                                      0       2       2      16   .abs_section_0
+     _DDRAB                                       2       2       2       2   .abs_section_2
+     _PORTE                                       8       1       1       0   .abs_section_8
+     _DDRE                                        9       1       1       0   .abs_section_9
+     _PEAR                                        A       1       1       0   .abs_section_a
+     _MODE                                        B       1       1       0   .abs_section_b
+     _PUCR                                        C       1       1       0   .abs_section_c
+     _RDRIV                                       D       1       1       0   .abs_section_d
+     _EBICTL                                      E       1       1       0   .abs_section_e
+     _INITRM                                     10       1       1       0   .abs_section_10
+     _INITRG                                     11       1       1       0   .abs_section_11
+     _MISC                                       13       1       1       0   .abs_section_13
+     _ITCR                                       15       1       1       0   .abs_section_15
+     _ITEST                                      16       1       1       0   .abs_section_16
+     _VREGCTRL                                   19       1       1       0   .abs_section_19
+     _PARTID                                     1A       2       2       0   .abs_section_1a
+     _MEMSIZ0                                    1C       1       1       0   .abs_section_1c
+     _MEMSIZ1                                    1D       1       1       0   .abs_section_1d
+     _INTCR                                      1E       1       1       0   .abs_section_1e
+     _HPRIO                                      1F       1       1       0   .abs_section_1f
+     _DBGC1                                      20       1       1       0   .abs_section_20
+     _DBGSC                                      21       1       1       0   .abs_section_21
+     _DBGTB                                      22       2       2       0   .abs_section_22
+     _DBGCNT                                     24       1       1       0   .abs_section_24
+     _DBGCCX                                     25       1       1       0   .abs_section_25
+     _DBGCC                                      26       2       2       0   .abs_section_26
+     _DBGC2                                      28       1       1       0   .abs_section_28
+     _DBGC3                                      29       1       1       0   .abs_section_29
+     _DBGCAX                                     2A       1       1       0   .abs_section_2a
+     _DBGCA                                      2B       2       2       0   .abs_section_2b
+     _DBGCBX                                     2D       1       1       0   .abs_section_2d
+     _DBGCB                                      2E       2       2       0   .abs_section_2e
+     _PPAGE                                      30       1       1       0   .abs_section_30
+     _SYNR                                       34       1       1       0   .abs_section_34
+     _REFDV                                      35       1       1       0   .abs_section_35
+     _CRGFLG                                     37       1       1       0   .abs_section_37
+     _CRGINT                                     38       1       1       0   .abs_section_38
+     _CLKSEL                                     39       1       1       0   .abs_section_39
+     _PLLCTL                                     3A       1       1       0   .abs_section_3a
+     _RTICTL                                     3B       1       1       0   .abs_section_3b
+     _COPCTL                                     3C       1       1       0   .abs_section_3c
+     _ARMCOP                                     3F       1       1       0   .abs_section_3f
+     _TIOS                                       40       1       1       6   .abs_section_40
+     _CFORC                                      41       1       1       0   .abs_section_41
+     _OC7M                                       42       1       1       0   .abs_section_42
+     _OC7D                                       43       1       1       0   .abs_section_43
+     _TCNT                                       44       2       2       4   .abs_section_44
+     _TSCR1                                      46       1       1       1   .abs_section_46
+     _TTOV                                       47       1       1       0   .abs_section_47
+     _TCTL1                                      48       1       1       4   .abs_section_48
+     _TCTL2                                      49       1       1       0   .abs_section_49
+     _TCTL3                                      4A       1       1       4   .abs_section_4a
+     _TCTL4                                      4B       1       1       0   .abs_section_4b
+     _TIE                                        4C       1       1       3   .abs_section_4c
+     _TSCR2                                      4D       1       1       1   .abs_section_4d
+     _TFLG1                                      4E       1       1       5   .abs_section_4e
+     _TFLG2                                      4F       1       1       0   .abs_section_4f
+     _TC0                                        50       2       2       1   .abs_section_50
+     _TC1                                        52       2       2       1   .abs_section_52
+     _TC2                                        54       2       2       3   .abs_section_54
+     _TC3                                        56       2       2       0   .abs_section_56
+     _TC4                                        58       2       2       1   .abs_section_58
+     _TC5                                        5A       2       2       2   .abs_section_5a
+     _TC6                                        5C       2       2       0   .abs_section_5c
+     _TC7                                        5E       2       2       1   .abs_section_5e
+     _PACTL                                      60       1       1       0   .abs_section_60
+     _PAFLG                                      61       1       1       0   .abs_section_61
+     _PACNT                                      62       2       2       0   .abs_section_62
+     _ATDCTL23                                   82       2       2       2   .abs_section_82
+     _ATDCTL45                                   84       2       2       3   .abs_section_84
+     _ATDSTAT0                                   86       1       1       1   .abs_section_86
+     _ATDTEST1                                   89       1       1       0   .abs_section_89
+     _ATDSTAT1                                   8B       1       1       1   .abs_section_8b
+     _ATDDIEN                                    8D       1       1       2   .abs_section_8d
+     _PORTAD0                                    8F       1       1       0   .abs_section_8f
+     _ATDDR0                                     90       2       2       1   .abs_section_90
+     _ATDDR1                                     92       2       2       0   .abs_section_92
+     _ATDDR2                                     94       2       2       0   .abs_section_94
+     _ATDDR3                                     96       2       2       0   .abs_section_96
+     _ATDDR4                                     98       2       2       0   .abs_section_98
+     _ATDDR5                                     9A       2       2       0   .abs_section_9a
+     _ATDDR6                                     9C       2       2       0   .abs_section_9c
+     _ATDDR7                                     9E       2       2       0   .abs_section_9e
+     _SCIBD                                      C8       2       2       2   .abs_section_c8
+     _SCICR1                                     CA       1       1       2   .abs_section_ca
+     _SCICR2                                     CB       1       1       2   .abs_section_cb
+     _SCISR1                                     CC       1       1       5   .abs_section_cc
+     _SCISR2                                     CD       1       1       0   .abs_section_cd
+     _SCIDRH                                     CE       1       1       0   .abs_section_ce
+     _SCIDRL                                     CF       1       1       3   .abs_section_cf
+     _SPICR1                                     D8       1       1       0   .abs_section_d8
+     _SPICR2                                     D9       1       1       0   .abs_section_d9
+     _SPIBR                                      DA       1       1       0   .abs_section_da
+     _SPISR                                      DB       1       1       0   .abs_section_db
+     _SPIDR                                      DD       1       1       0   .abs_section_dd
+     _PWME                                       E0       1       1       2   .abs_section_e0
+     _PWMPOL                                     E1       1       1       1   .abs_section_e1
+     _PWMCLK                                     E2       1       1       2   .abs_section_e2
+     _PWMPRCLK                                   E3       1       1       1   .abs_section_e3
+     _PWMCAE                                     E4       1       1       0   .abs_section_e4
+     _PWMCTL                                     E5       1       1       0   .abs_section_e5
+     _PWMSCLA                                    E8       1       1       1   .abs_section_e8
+     _PWMSCLB                                    E9       1       1       0   .abs_section_e9
+     _PWMCNT01                                   EC       2       2       0   .abs_section_ec
+     _PWMCNT23                                   EE       2       2       0   .abs_section_ee
+     _PWMCNT45                                   F0       2       2       2   .abs_section_f0
+     _PWMPER01                                   F2       2       2       0   .abs_section_f2
+     _PWMPER23                                   F4       2       2       0   .abs_section_f4
+     _PWMPER45                                   F6       2       2       2   .abs_section_f6
+     _PWMDTY01                                   F8       2       2       0   .abs_section_f8
+     _PWMDTY23                                   FA       2       2       0   .abs_section_fa
+     _PWMDTY45                                   FC       2       2       2   .abs_section_fc
+     _PWMSDN                                     FE       1       1       0   .abs_section_fe
+     _FCLKDIV                                   100       1       1       0   .abs_section_100
+     _FSEC                                      101       1       1       0   .abs_section_101
+     _FCNFG                                     103       1       1       0   .abs_section_103
+     _FPROT                                     104       1       1       0   .abs_section_104
+     _FSTAT                                     105       1       1       0   .abs_section_105
+     _FCMD                                      106       1       1       0   .abs_section_106
+     _CANCTL0                                   140       1       1       0   .abs_section_140
+     _CANCTL1                                   141       1       1       0   .abs_section_141
+     _CANBTR0                                   142       1       1       0   .abs_section_142
+     _CANBTR1                                   143       1       1       0   .abs_section_143
+     _CANRFLG                                   144       1       1       0   .abs_section_144
+     _CANRIER                                   145       1       1       0   .abs_section_145
+     _CANTFLG                                   146       1       1       0   .abs_section_146
+     _CANTIER                                   147       1       1       0   .abs_section_147
+     _CANTARQ                                   148       1       1       0   .abs_section_148
+     _CANTAAK                                   149       1       1       0   .abs_section_149
+     _CANTBSEL                                  14A       1       1       0   .abs_section_14a
+     _CANIDAC                                   14B       1       1       0   .abs_section_14b
+     _CANRXERR                                  14E       1       1       0   .abs_section_14e
+     _CANTXERR                                  14F       1       1       0   .abs_section_14f
+     _CANIDAR0                                  150       1       1       0   .abs_section_150
+     _CANIDAR1                                  151       1       1       0   .abs_section_151
+     _CANIDAR2                                  152       1       1       0   .abs_section_152
+     _CANIDAR3                                  153       1       1       0   .abs_section_153
+     _CANIDMR0                                  154       1       1       0   .abs_section_154
+     _CANIDMR1                                  155       1       1       0   .abs_section_155
+     _CANIDMR2                                  156       1       1       0   .abs_section_156
+     _CANIDMR3                                  157       1       1       0   .abs_section_157
+     _CANIDAR4                                  158       1       1       0   .abs_section_158
+     _CANIDAR5                                  159       1       1       0   .abs_section_159
+     _CANIDAR6                                  15A       1       1       0   .abs_section_15a
+     _CANIDAR7                                  15B       1       1       0   .abs_section_15b
+     _CANIDMR4                                  15C       1       1       0   .abs_section_15c
+     _CANIDMR5                                  15D       1       1       0   .abs_section_15d
+     _CANIDMR6                                  15E       1       1       0   .abs_section_15e
+     _CANIDMR7                                  15F       1       1       0   .abs_section_15f
+     _CANRXIDR0                                 160       1       1       0   .abs_section_160
+     _CANRXIDR1                                 161       1       1       0   .abs_section_161
+     _CANRXIDR2                                 162       1       1       0   .abs_section_162
+     _CANRXIDR3                                 163       1       1       0   .abs_section_163
+     _CANRXDSR0                                 164       1       1       0   .abs_section_164
+     _CANRXDSR1                                 165       1       1       0   .abs_section_165
+     _CANRXDSR2                                 166       1       1       0   .abs_section_166
+     _CANRXDSR3                                 167       1       1       0   .abs_section_167
+     _CANRXDSR4                                 168       1       1       0   .abs_section_168
+     _CANRXDSR5                                 169       1       1       0   .abs_section_169
+     _CANRXDSR6                                 16A       1       1       0   .abs_section_16a
+     _CANRXDSR7                                 16B       1       1       0   .abs_section_16b
+     _CANRXDLR                                  16C       1       1       0   .abs_section_16c
+     _CANRXTSR                                  16E       2       2       0   .abs_section_16e
+     _CANTXIDR0                                 170       1       1       0   .abs_section_170
+     _CANTXIDR1                                 171       1       1       0   .abs_section_171
+     _CANTXIDR2                                 172       1       1       0   .abs_section_172
+     _CANTXIDR3                                 173       1       1       0   .abs_section_173
+     _CANTXDSR0                                 174       1       1       0   .abs_section_174
+     _CANTXDSR1                                 175       1       1       0   .abs_section_175
+     _CANTXDSR2                                 176       1       1       0   .abs_section_176
+     _CANTXDSR3                                 177       1       1       0   .abs_section_177
+     _CANTXDSR4                                 178       1       1       0   .abs_section_178
+     _CANTXDSR5                                 179       1       1       0   .abs_section_179
+     _CANTXDSR6                                 17A       1       1       0   .abs_section_17a
+     _CANTXDSR7                                 17B       1       1       0   .abs_section_17b
+     _CANTXDLR                                  17C       1       1       0   .abs_section_17c
+     _CANTXTBPR                                 17D       1       1       0   .abs_section_17d
+     _CANTXTSR                                  17E       2       2       0   .abs_section_17e
+     _PTT                                       240       1       1       7   .abs_section_240
+     _PTIT                                      241       1       1       0   .abs_section_241
+     _DDRT                                      242       1       1       1   .abs_section_242
+     _RDRT                                      243       1       1       0   .abs_section_243
+     _PERT                                      244       1       1       0   .abs_section_244
+     _PPST                                      245       1       1       0   .abs_section_245
+     _MODRR                                     247       1       1       0   .abs_section_247
+     _PTS                                       248       1       1       2   .abs_section_248
+     _PTIS                                      249       1       1       0   .abs_section_249
+     _DDRS                                      24A       1       1       0   .abs_section_24a
+     _RDRS                                      24B       1       1       0   .abs_section_24b
+     _PERS                                      24C       1       1       0   .abs_section_24c
+     _PPSS                                      24D       1       1       0   .abs_section_24d
+     _WOMS                                      24E       1       1       0   .abs_section_24e
+     _PTM                                       250       1       1       0   .abs_section_250
+     _PTIM                                      251       1       1       0   .abs_section_251
+     _DDRM                                      252       1       1       0   .abs_section_252
+     _RDRM                                      253       1       1       0   .abs_section_253
+     _PERM                                      254       1       1       0   .abs_section_254
+     _PPSM                                      255       1       1       0   .abs_section_255
+     _WOMM                                      256       1       1       0   .abs_section_256
+     _PTP                                       258       1       1       8   .abs_section_258
+     _PTIP                                      259       1       1       0   .abs_section_259
+     _DDRP                                      25A       1       1       3   .abs_section_25a
+     _RDRP                                      25B       1       1       0   .abs_section_25b
+     _PERP                                      25C       1       1       0   .abs_section_25c
+     _PPSP                                      25D       1       1       0   .abs_section_25d
+     _PIEP                                      25E       1       1       0   .abs_section_25e
+     _PIFP                                      25F       1       1       0   .abs_section_25f
+     _PTJ                                       268       1       1       0   .abs_section_268
+     _PTIJ                                      269       1       1       0   .abs_section_269
+     _DDRJ                                      26A       1       1       0   .abs_section_26a
+     _RDRJ                                      26B       1       1       0   .abs_section_26b
+     _PERJ                                      26C       1       1       0   .abs_section_26c
+     _PPSJ                                      26D       1       1       0   .abs_section_26d
+     _PIEJ                                      26E       1       1       0   .abs_section_26e
+     _PIFJ                                      26F       1       1       0   .abs_section_26f
+     _PTAD                                      270       1       1      21   .abs_section_270
+     _PTIAD                                     271       1       1       0   .abs_section_271
+     _DDRAD                                     272       1       1       2   .abs_section_272
+     _RDRAD                                     273       1       1       0   .abs_section_273
+     _PERAD                                     274       1       1       0   .abs_section_274
+     _PPSAD                                     275       1       1       0   .abs_section_275
+     RS232_Termination_String                   900       4       4       4   .data       
+     RS232_Transmission_String                  904       4       4       4   .data       
+     Stepper_Motor_Array                        908       8       8       1   .data       
+     pbuf                                       910       6       6      10   .bss        
+     RS232_Com_PORT                             916       1       1       2   .bss        
+     Board_Function                             917       1       1       3   .bss        
+     MessageSequenceNumber                      918       1       1       1   .bss        
+     lDataLength                                919       1       1       1   .bss        
+     RS232_Counter_                             91A       1       1       3   .bss        
+     RS232_Counter                              91B       1       1       5   .bss        
+     RS232_Data_Input                           91C       A      10       2   .bss        
+     data_in                                    926       2       2       1   .bss        
+     RS232_Recieve_Flag                         928       1       1       6   .bss        
+     RS232_Transmission_Flag                    929       1       1      11   .bss        
+     Message_Storage_Counter                    92A       1       1      11   .bss        
+     MessageStorageArray                        92B      28      40       6   .bss        
+     RS232_Processed_Data_Flag                  953       1       1       5   .bss        
+     RS232_COUNTER_OUTSIDE                      954       2       2       2   .bss        
+     Error_Flag_Number                          956       1       1       4   .bss        
+     Local_Message_Storage_Array_RS232          957      28      40      18   .bss        
+     RS232_BAUD_RATE                            97F       4       4       6   .bss        
+     Motor_Count                                983       1       1       6   .bss        
+     Stepper_Direction_Flag                     984       1       1       9   .bss        
+     Stepper_Steps                              985       2       2       8   .bss        
+     Stepper_WholeStep_Flag                     987       1       1       4   .bss        
+     Stepper_Count_Steps                        988       2       2       6   .bss        
+     Stepper_Speed                              98A       2       2       3   .bss        
+     STEPPER_MOTOR_STEP                         98C       1       1       2   .bss        
+     EN_L_Pulse_Flag                            98D       2       2       4   .bss        
+     EN_R_Pulse_Flag                            98F       2       2       4   .bss        
+     L_TIMER                                    991       2       2       2   .bss        
+     R_TIMER                                    993       2       2       2   .bss        
+     OC2_Output_Flag                            995       1       1       3   .bss        
+     Pulse_High                                 996       2       2       5   .bss        
+     Pulse_Low                                  998       2       2       2   .bss        
+     anal_x                                     99A       2       2      11   .bss        
+     Accel_X_Zero                               99C       2       2       2   .bss        
+     anal_y                                     99E       2       2      11   .bss        
+     Accel_Y_Zero                               9A0       2       2       2   .bss        
+     anal_z                                     9A2       2       2      10   .bss        
+     Accel_Z_Zero                               9A4       2       2       1   .bss        
+     TerminalProperties                         9A6       A      10      21   .bss        
+     Current                                    9B0      12      18      20   .bss        
+     Properties                                 9C2       7       7       5   .bss        
+     L_Counter                                  9C9       2       2       5   .bss        
+     R_Counter                                  9CB       2       2       5   .bss        
+     WATCH_DOG_FLAG                             9CD       2       2       4   .bss        
+     WATCH_L_COUNTER                            9CF       2       2       2   .bss        
+     WATCH_R_COUNTER                            9D1       2       2       2   .bss        
+     RS232_COMPARE                              9D3       1       1       1   .common     
+     Init                                      C000      29      41       1   .init       
+     _Startup                                  C029       8       8       0   .init       
+     pow10                                     C03B      28      40       4   .rodata     
+     pow16                                     C063      20      32       4   .rodata     
+     pow8                                      C083      2C      44       4   .rodata     
+     font                                      C0AF     2BC     700       1   .rodata     
+     STRING.RS232.outside.of.all.1             C36B      31      49       1   .rodata1    
+     STRING..c.2                               C39C       3       3       1   .rodata1    
+     STRING..LENGTH...d.3                      C39F       C      12       1   .rodata1    
+     STRING...LOAD.BOARD.FUNCTIO.4             C3AB      1A      26       1   .rodata1    
+     STRING..OPENIGN.SERIAL.TERM.5             C3C5      19      25       1   .rodata1    
+     STRING..DC.MOTOR.SHIT.6                   C3DE       F      15       1   .rodata1    
+     STRING..PING.7                            C3ED       6       6       1   .rodata1    
+     STRING..s....d.8                          C3F3       8       8       1   .rodata1    
+     STRING.LEFT.9                             C3FB       5       5       1   .rodata1    
+     STRING..s...d..10                         C400       8       8       1   .rodata1    
+     STRING.RIGHT.11                           C408       6       6       1   .rodata1    
+     STRING.TC5...Delay.1ms.Gene.3             C40E      5B      91       1   .rodata1    
+     STRING.TC5..Delay.10ms..Gen.4             C469      5C      92       1   .rodata1    
+     STRING.Microcrap.Winderp..v.1             C4C5      20      32       1   .rodata1    
+     STRING.Command.Line.Debuggi.2             C4E5      2F      47       1   .rodata1    
+     STRING.Microcrap.Winderp..v.3             C514      20      32       1   .rodata1    
+     STRING.Command.Line.Debuggi.4             C534      2F      47       1   .rodata1    
+     STRING.TDRE.OK.1                          C563       8       8       1   .rodata1    
+     STRING.TDRECLEAR.ERROR.2                  C56B      10      16       1   .rodata1    
+     STRING...RS232.Setup.3                    C57B       E      14       1   .rodata1    
+     STRING..d..1                              C589       4       4       1   .rodata1    
+     STRING...d.LENGTH...d..2                  C58D      10      16       1   .rodata1    
+     STRING.....d....d..3                      C59D       C      12       1   .rodata1    
+     STRING...c.4                              C5A9       4       4       1   .rodata1    
+     STRING.ERROR.5                            C5AD       6       6       1   .rodata1    
+     STRING...RIGHT.MOTOR.....SP.6             C5B3      2C      44       1   .rodata1    
+     STRING...LEFT.MOTOR.....SP..7             C5DF      2B      43       1   .rodata1    
+     STRING...INTERRUPTS.DISABLE.16            C60A      1E      30       1   .rodata1    
+     STRING...Begin.Communicatio.17            C628      21      33       1   .rodata1    
+     STRING...BaudRate...lu..18                C649      11      17       1   .rodata1    
+     STRING...Control.Reg.1...d..19            C65A      2A      42       1   .rodata1    
+     STRING...Begin.Input...20                 C684      10      16       1   .rodata1    
+     STRING..c.21                              C694       3       3       1   .rodata1    
+     STRING.Stepper.Flag.Not.Set.3             C697      1E      30       1   .rodata1    
+     STRING.Stepper.Count...0.Ch.4             C6B5      23      35       1   .rodata1    
+     STRING.FATAL.SOFTWARE.ERROR.1             C6D8      15      21       1   .rodata1    
+     STRING.ERROR.NUMBER...d.2                 C6ED      11      17       1   .rodata1    
+     STRING.SEE.LINUX.ERRONO.DOC.3             C6FE      1F      31       1   .rodata1    
+     STRING..s.4                               C71D       3       3       1   .rodata1    
+     STRING.IT.S.SAFE.TO.PANIC.5               C720      13      19       1   .rodata1    
+     STRING.IT.S.SAFE.TO.PANIC.6               C733      13      19       1   .rodata1    
+     STRING.FATAL.SOFTWARE.ERROR.7             C746      15      21       1   .rodata1    
+     STRING.ERROR.NUMBER...d.8                 C75B      11      17       1   .rodata1    
+     STRING.SEE.LINUX.ERRONO.DOC.9             C76C      1F      31       1   .rodata1    
+     STRING.IT.S.SAFE.TO.PANIC.10              C78B      13      19       1   .rodata1    
+     STRING.IT.S.SAFE.TO.PANIC.11              C79E      13      19       1   .rodata1    
+     STRING.Please.Allow.the.Boa.1             C7B1      36      54       1   .rodata1    
+     STRING...x..d.y..d.z..d.2                 C7E7      11      17       1   .rodata1    
+     STRING.Analog.Or.Accel.Init.3             C7F8      2B      43       1   .rodata1    
+     STRING.Calibration.Error.pl.4             C823      2F      47       1   .rodata1    
+     STRING....Steady.state.valu.5             C852      2A      42       1   .rodata1    
+     main                                      C87C      34      52       1   .text       
+     RS232_INIT                                C8B0      15      21       1   .text       
+     RS232_TEST                                C8C5     193     403       2   .text       
+     printf                                    CA58      13      19      37   .text       
+     vprintf                                   CA6B     478    1144      49   .text       
+     _out                                      CEE3       C      12       9   .text       
+     set_printf                                CEEF       C      12       1   .text       
+     ILI9327_WRITE_DATA                        CEFB       A      10      41   .text       
+     ILI9327_WRITE_COMMAND                     CF05       B      11      17   .text       
+     ILI9327_WRITE_BUS                         CF10      17      23       2   .text       
+     ILI9327_INITALIZE                         CF27     1A5     421      10   .text       
+     ILI9327_ADDRESS_SET                       D0CC      54      84       1   .text       
+     ILI9327_Fill_Rectangle                    D120      6B     107       1   .text       
+     Timer_INIT                                D18B       8       8       1   .text       
+     Timer_Delay_1ms                           D193      34      52       6   .text       
+     Timer_Delay_10ms                          D1C7      36      54       6   .text       
+     TERMIO_PutChar                            D1FD       3       3       1   .text       
+     LCD_Settings                              D200      13      19       1   .text       
+     LCD_Fill_Rectangle                        D213      16      22      11   .text       
+     LCD_Write_Line                            D229      A1     161       4   .text       
+     LCD_Write_Char                            D2CA      65     101       2   .text       
+     Color_Convert                             D32F      25      37       1   .text       
+     terminalemulator                          D354      6C     108       2   .text       
+     Terminal_Set_Properties                   D3C0      20      32       2   .text       
+     TerminalChar                              D3E0     11D     285       3   .text       
+     RS232_Init                                D4FD      85     133       1   .text       
+     RS232_Write                               D582       A      10       3   .text       
+     RS232_Write_String                        D58C       F      15       1   .text       
+     RS232_Read                                D59B       7       7       1   .text       
+     Process_RS232                             D5A2      4C      76       1   .text       
+     SCIhandler                                D5EE     111     273       2   .text       
+     Ping_ECD                                  D6FF      C0     192       1   .text       
+     Camera_ECD                                D7BF      59      89       1   .text       
+     DC_Motor_ECD                              D818      D3     211       1   .text       
+     ASCII_TO_DECIMAL                          D8EB      4E      78       6   .text       
+     RS232_ECD                                 D939      56      86       1   .text       
+     ILI9327_INIT                              D98F       6       6       1   .text       
+     STMOTOR_COMPLETE_MOTION                   D995      2C      44       2   .text       
+     STMOTOR_INIT                              D9C1      2A      42       1   .text       
+     STMOTOR_FIND_HOME                         D9EB      C5     197       1   .text       
+     STMOTOR_MOVE_DEGREES                      DAB0      15      21       1   .text       
+     TC7handler                                DAC5      92     146       1   .text       
+     DCM_INIT                                  DB57      14      20       1   .text       
+     PWM_PERCENTAGE_CONVERSION                 DB6B      20      32       2   .text       
+     PWM_INIT                                  DB8B      1D      29       1   .text       
+     Encoder_Init                              DBA8      37      55       1   .text       
+     TC0handler                                DBDF      2B      43       1   .text       
+     TC1handler                                DC0A      2B      43       1   .text       
+     TC4handler                                DC35      12      18       1   .text       
+     RC_SERVO_INIT                             DC47      1B      27       1   .text       
+     RCServo_Degrees_Calulate                  DC62      15      21       1   .text       
+     RCServo_Set_Degrees_Sweep                 DC77      62      98       1   .text       
+     OC2_isr                                   DCD9      2E      46       1   .text       
+     Analog_Init                               DD07      1A      26       1   .text       
+     Analog_Read                               DD21      1D      29       3   .text       
+     ERROR_PRINT_SCREEN_2                      DD3E     10B     267       6   .text       
+     ERROR_PRINT_SCREEN                        DE49      FA     250       2   .text       
+     Accelerometer_INIT                        DF43      A2     162       1   .text       
+     Accelerometer_Read                        DFE5      87     135       1   .text       
+     _BSHL                                     E06C       8       8       2   RUNTIME     
+     _BDIVMODU                                 E074       A      10       6   RUNTIME     
+     _LCMP                                     E07E      19      25       3   RUNTIME     
+     _LCMP_P                                   E097      15      21       3   RUNTIME     
+     _LNEG                                     E0AC       D      13       1   RUNTIME     
+     _lDivMod                                  E0B9      BE     190       1   RUNTIME     
+     _LDIVU                                    E177       E      14       1   RUNTIME     
+     _ILSEXT                                   E185       7       7       4   RUNTIME     
+     _CASE_DIRECT_BYTE                         E18C       5       5       1   RUNTIME     
+     _CASE_CHECKED_BYTE                        E191      14      20       2   RUNTIME     
+     _CASE_SEARCH_8                            E1A5      17      23       1   RUNTIME     
+     _CASE_SEARCH_8_BYTE                       E1BC      1A      26       1   RUNTIME     
+     _Vector_20                                FFD6       2       2       0   .abs_section_ffd6
+     _Vector_15                                FFE0       2       2       0   .abs_section_ffe0
+     _Vector_12                                FFE6       2       2       0   .abs_section_ffe6
+     _Vector_10                                FFEA       2       2       0   .abs_section_ffea
+     _Vector_9                                 FFEC       2       2       0   .abs_section_ffec
+     _Vector_8                                 FFEE       2       2       0   .abs_section_ffee
+
+*********************************************************************************************
+UNUSED-OBJECTS SECTION
+---------------------------------------------------------------------------------------------
+NOT USED PROCEDURES
+main.c.o:
+  ENCODER_SHOW_BILL DC_MOTOR_SHOW_BILL 
+EMBEDDED.C.o (ansisi.lib):
+  scanf gets puts fopen fflush fclose fprintf fputs fputc fgetc remove clock 
+  abort exit 
+PRINTF.C.o (ansisi.lib):
+  deposit_char sprintf vsprintf 
+rtshc12.c.o (ansisi.lib):
+  _BSHRS _BSHRU _BDIVMODS _ISHL _ISHRU _ISHRS _LSHL _LSHRU _LSHRS _LADD _LSUB 
+  _LAND _LOR _LXOR _LCMP_PP _LCOM _LINC _LDEC _LMUL _LMULU16x32 _LMULS16x32 
+  _NEG_P _LDIVS _LMODU _LMODS _COPY _CASE_DIRECT _CASE_CHECKED _CASE_SEARCH 
+  _CASE_SEARCH_BYTE _FCALL _FPCMP 
+ILI9327.c.o:
+  ILI9327_SendPixel 
+Timer.c.o:
+  Timer_Delay_10us Timer_Delay_100us 
+LCD_Draw.c.o:
+  LCD_Geometry2 LCD_FillScreen LCD_SendPixel 
+Terminal.c.o:
+  Terminal_Set_Line 
+Test.c.o:
+  Stepper_Motor_ECD RC_Servo_ECD DC_Motor_Encoder_ECD SerialTerminal_ECD 
+  Accelerometer_ECD DAC_ECD Touch_Test MAX5513_Test Test_RS232 testanal 
+  TEST_SPI 
+L293DD.c.o:
+  STMOTOR_TEST STMOTOR_MOVE_DEGREES_FROM_FAR_RIGHT 
+Encoder.c.o:
+  ENCODER 
+RC_Servo.c.o:
+  RCServo_Set_Degrees 
+Accelerometer.c.o:
+  Accelerometer_Calc_Val Accelerometer_Val2Degree Accelerometer_Test_2 
+  Accelerometer_Test Accelerometer_Read_Values 
+menu.c.o:
+  Accelerometer_Menu Encoder_menu 
+NOT USED VARIABLES
+main.c.o:
+  colorArray 
+EMBEDDED.C.o (ansisi.lib):
+  STRING..1 
+rtshc12.c.o (ansisi.lib):
+  _PowOfTwo_8 _PowOfTwo_16 _PowOfTwo_32 errno 
+ILI9327.c.o:
+  colorArray 
+Timer.c.o:
+  colorArray STRING.TC5...Delay.10us.Gen.1 STRING.TC5..Delay.100us..Ge.2 
+LCD_Draw.c.o:
+  colorArray 
+Terminal.c.o:
+  colorArray 
+Test.c.o:
+  STRING..d.8 STRING...STEPPER.MOTOR.9 STRING.RUNNING.SERVO.AND.ST.10 
+  STRING..d.11 STRING...STEPPER.MOTOR......12 STRING...SERVO.MOTOR.....SP.13 
+  STRING.ENKOTOR..14 STRING..c.15 STRING...x...d..y...d..22 
+  STRING..Analog.On.PIN...d.23 STRING..Analog.On.PIN...d.24 
+  STRING...RS232.Write..0x.x.25 STRING..Read..0x.x.26 STRING...x..27 colorArray 
+  i 
+L293DD.c.o:
+  STRING.found.Home.1 STRING..END.OF.STEPPER_TEST.2 colorArray 
+L2665.c.o:
+  colorArray 
+Encoder.c.o:
+  STRING.R..d.1 STRING.L..d.2 colorArray 
+RC_Servo.c.o:
+  colorArray 
+error.c.o:
+  colorArray 
+Accelerometer.c.o:
+  STRING...x...d..y...d..z....6 STRING...x..d.y..d.z..d.7 colorArray 
+  Accel_Negative_Flags deg_x deg_y deg_z 
+menu.c.o:
+  STRING.Accelerometer.Output.1 STRING..s.2 STRING..s.3 STRING.X.Output.4 
+  STRING..s.5 STRING.Y.Output.6 STRING..s.7 STRING.Z.Output.8 STRING..d.9 
+  STRING..d.10 STRING..d.11 STRING.Left.Turn.12 STRING........13 
+  STRING.Right.Turn.14 STRING........15 STRING.Motor.Encoder.16 STRING..s.17 
+  STRING..s.18 STRING.L.ENCODER.19 STRING..s.20 STRING.R.ENCODER.21 
+  STRING..d.22 STRING..d.23 colorArray 
+
+*********************************************************************************************
+COPYDOWN SECTION
+---------------------------------------------------------------------------------------------
+------- ROM-ADDRESS: 0xE1D6 ---- SIZE       4 ---
+Filling bytes inserted
+ 00100900
+------- ROM-ADDRESS: 0xE1DA ---- RAM-ADDRESS: 0x900 ---- SIZE       4 ---
+Name of initialized Object : RS232_Termination_String
+ 61626364
+------- ROM-ADDRESS: 0xE1DE ---- RAM-ADDRESS: 0x904 ---- SIZE       4 ---
+Name of initialized Object : RS232_Transmission_String
+ 71776572
+------- ROM-ADDRESS: 0xE1E2 ---- RAM-ADDRESS: 0x908 ---- SIZE       8 ---
+Name of initialized Object : Stepper_Motor_Array
+ 80A0206040 501090
+------- ROM-ADDRESS: 0xE1EA ---- SIZE       2 ---
+Filling bytes inserted
+ 0000
+
+*********************************************************************************************
+OBJECT-DEPENDENCIES SECTION
+---------------------------------------------------------------------------------------------
+Init                      USES _startupData 
+_Startup                  USES __SEG_END_SSTACK Init main 
+main                      USES Current Error_Flag_Number Timer_INIT 
+                                ILI9327_INIT DCM_INIT RC_SERVO_INIT STMOTOR_INIT 
+                                STMOTOR_FIND_HOME Accelerometer_INIT Encoder_Init RS232_TEST 
+RS232_INIT                USES RS232_Processed_Data_Flag RS232_Recieve_Flag 
+                                RS232_Counter RS232_Init ERROR_PRINT_SCREEN 
+RS232_TEST                USES Current Properties TerminalProperties 
+                                Error_Flag_Number RS232_INIT RS232_COUNTER_OUTSIDE 
+                                RS232_Processed_Data_Flag Message_Storage_Counter L_Counter R_Counter 
+                                WATCH_DOG_FLAG STRING.RS232.outside.of.all.1 
+                                ERROR_PRINT_SCREEN_2 _BDIVMODU MessageStorageArray 
+                                Local_Message_Storage_Array_RS232 STRING..c.2 printf Process_RS232 
+                                STRING..LENGTH...d.3 Board_Function STRING...LOAD.BOARD.FUNCTIO.4 
+                                _CASE_CHECKED_BYTE STRING..OPENIGN.SERIAL.TERM.5 RS232_Com_PORT 
+                                RS232_ECD STRING..DC.MOTOR.SHIT.6 DC_Motor_ECD 
+                                Camera_ECD STRING..PING.7 Ping_ECD LCD_Fill_Rectangle 
+                                STRING.LEFT.9 STRING..s....d.8 STRING.RIGHT.11 
+                                STRING..s...d..10 WATCH_L_COUNTER WATCH_R_COUNTER RS232_TEST 
+printf                    USES TERMIO_PutChar set_printf vprintf 
+vprintf                   USES vprintf _out _CASE_SEARCH_8_BYTE 
+                                _CASE_DIRECT_BYTE _CASE_SEARCH_8 pbuf _ILSEXT _LNEG pow8 _LCMP_P 
+                                pow16 pow10 
+_out                      USES pbuf 
+set_printf                USES pbuf 
+ILI9327_WRITE_DATA        USES _PTAD ILI9327_WRITE_BUS 
+ILI9327_WRITE_COMMAND     USES _PTAD ILI9327_WRITE_BUS 
+ILI9327_WRITE_BUS         USES _PORTAB _PTAD 
+ILI9327_INITALIZE         USES LCD_Settings _DDRAD _ATDDIEN _DDRAB _PTAD _BSHL 
+                                ILI9327_INITALIZE Timer_Delay_1ms ILI9327_WRITE_COMMAND 
+                                ILI9327_WRITE_DATA Timer_Delay_10ms 
+ILI9327_ADDRESS_SET       USES ILI9327_WRITE_COMMAND ILI9327_WRITE_DATA 
+ILI9327_Fill_Rectangle    USES Color_Convert ILI9327_WRITE_COMMAND _PTAD 
+                                ILI9327_ADDRESS_SET ILI9327_WRITE_DATA 
+Timer_INIT                USES _TSCR1 _TSCR2 
+Timer_Delay_1ms           USES _TIOS _ILSEXT STRING.TC5...Delay.1ms.Gene.3 
+                                ERROR_PRINT_SCREEN_2 _TCNT _TC5 _TFLG1 
+Timer_Delay_10ms          USES _TIOS STRING.TC5..Delay.10ms..Gen.4 
+                                ERROR_PRINT_SCREEN_2 _TCNT _TC5 _TFLG1 
+TERMIO_PutChar            USES TerminalChar 
+LCD_Settings              USES Properties 
+LCD_Fill_Rectangle        USES ILI9327_Fill_Rectangle 
+LCD_Write_Line            USES Current Properties LCD_Write_Char 
+LCD_Write_Char            USES Current font LCD_Fill_Rectangle 
+terminalemulator          USES TerminalProperties LCD_Fill_Rectangle 
+                                STRING.Microcrap.Winderp..v.1 LCD_Write_Line STRING.Command.Line.Debuggi.2 
+                                Terminal_Set_Properties 
+Terminal_Set_Properties   USES TerminalProperties Current 
+TerminalChar              USES TerminalProperties Current LCD_Fill_Rectangle 
+                                TerminalChar STRING.Microcrap.Winderp..v.3 LCD_Write_Line 
+                                STRING.Command.Line.Debuggi.4 Terminal_Set_Properties LCD_Write_Char 
+RS232_Init                USES RS232_BAUD_RATE _SCICR1 _SCICR2 _LCMP _SCIBD 
+                                _SCISR1 STRING.TDRE.OK.1 printf STRING...RS232.Setup.3 
+                                STRING.TDRECLEAR.ERROR.2 
+RS232_Write               USES _SCISR1 _SCIDRL 
+RS232_Write_String        USES RS232_Write 
+RS232_Read                USES _SCISR1 _SCIDRL 
+Process_RS232             USES _CASE_CHECKED_BYTE RS232_Com_PORT 
+                                Board_Function MessageSequenceNumber lDataLength 
+SCIhandler                USES RS232_Counter RS232_Counter_ _SCISR1 _SCIDRL 
+                                RS232_Data_Input data_in RS232_Write RS232_Recieve_Flag 
+                                SCIhandler RS232_COMPARE RS232_Transmission_Flag 
+                                RS232_Transmission_String Message_Storage_Counter MessageStorageArray 
+                                RS232_Termination_String RS232_Processed_Data_Flag 
+                                RS232_COUNTER_OUTSIDE Error_Flag_Number 
+Ping_ECD                  USES Local_Message_Storage_Array_RS232 STRING..d..1 
+                                printf STRING...d.LENGTH...d..2 STRING.....d....d..3 
+                                STRING...c.4 RS232_Write STRING.ERROR.5 RS232_Write_String 
+Camera_ECD                USES Local_Message_Storage_Array_RS232 
+                                ASCII_TO_DECIMAL STMOTOR_MOVE_DEGREES _BDIVMODU 
+                                RCServo_Set_Degrees_Sweep 
+DC_Motor_ECD              USES Local_Message_Storage_Array_RS232 
+                                ASCII_TO_DECIMAL STRING...RIGHT.MOTOR.....SP.6 printf 
+                                STRING...LEFT.MOTOR.....SP..7 _BDIVMODU PWM_PERCENTAGE_CONVERSION _PWMDTY45 
+                                _PORTAB 
+RS232_ECD                 USES terminalemulator STRING...INTERRUPTS.DISABLE.16 
+                                printf STRING...Begin.Communicatio.17 RS232_BAUD_RATE 
+                                STRING...BaudRate...lu..18 _SCICR2 _SCICR1 STRING...Control.Reg.1...d..19 
+                                STRING...Begin.Input...20 RS232_Read STRING..c.21 
+ILI9327_INIT              USES ILI9327_INITALIZE terminalemulator 
+STMOTOR_COMPLETE_MOTION   USES Stepper_Direction_Flag Stepper_Steps 
+STMOTOR_INIT              USES Stepper_Direction_Flag Stepper_WholeStep_Flag 
+                                Stepper_Count_Steps Stepper_Steps Stepper_Speed _DDRP _DDRT _PTP 
+                                _TIOS _TIE 
+STMOTOR_FIND_HOME         USES Stepper_Count_Steps Stepper_Direction_Flag 
+                                Stepper_Steps Stepper_WholeStep_Flag 
+                                STRING.Stepper.Flag.Not.Set.3 STRING.Stepper.Count...0.Ch.4 
+                                STMOTOR_COMPLETE_MOTION ERROR_PRINT_SCREEN_2 
+STMOTOR_MOVE_DEGREES      USES STMOTOR_COMPLETE_MOTION 
+TC7handler                USES _TFLG1 _PTS Stepper_Direction_Flag 
+                                Stepper_WholeStep_Flag Motor_Count Stepper_Steps Stepper_Count_Steps 
+                                _BDIVMODU Stepper_Motor_Array STEPPER_MOTOR_STEP _PTT 
+                                _TCNT Stepper_Speed _TC7 
+DCM_INIT                  USES _DDRP _DDRAB PWM_INIT _PWMCNT45 _PORTAB 
+PWM_PERCENTAGE_CONVERSION USES _ILSEXT _LDIVU 
+PWM_INIT                  USES _PWME _PWMPOL _PWMCLK _PWMPRCLK _PWMSCLA 
+                                _PWMPER45 
+Encoder_Init              USES _TIOS _TIE _TCTL3 EN_L_Pulse_Flag 
+                                EN_R_Pulse_Flag L_TIMER R_TIMER L_Counter R_Counter 
+                                WATCH_L_COUNTER WATCH_R_COUNTER WATCH_DOG_FLAG 
+TC0handler                USES _TC0 L_TIMER _PTT EN_L_Pulse_Flag L_Counter 
+TC1handler                USES _PTT EN_R_Pulse_Flag R_Counter _TC1 R_TIMER 
+TC4handler                USES _TFLG1 WATCH_DOG_FLAG _TCNT _TC4 
+RC_SERVO_INIT             USES OC2_Output_Flag Pulse_High Pulse_Low _TIOS _TIE 
+RCServo_Degrees_Calulate  USES _BDIVMODU 
+RCServo_Set_Degrees_Sweep USES RCServo_Degrees_Calulate Pulse_High 
+                                Timer_Delay_10ms 
+OC2_isr                   USES _TFLG1 OC2_Output_Flag _TCTL1 _TC2 Pulse_High 
+                                Pulse_Low 
+Analog_Init               USES _ATDCTL23 _ATDCTL45 
+Analog_Read               USES _ATDCTL45 _ATDSTAT0 _ATDSTAT1 _ATDDR0 
+ERROR_PRINT_SCREEN_2      USES Properties TerminalProperties Current 
+                                ERROR_PRINT_SCREEN_2 LCD_Fill_Rectangle 
+                                STRING.FATAL.SOFTWARE.ERROR.1 printf STRING.ERROR.NUMBER...d.2 
+                                STRING.SEE.LINUX.ERRONO.DOC.3 STRING..s.4 STRING.IT.S.SAFE.TO.PANIC.5 
+                                Timer_Delay_10ms STRING.IT.S.SAFE.TO.PANIC.6 
+ERROR_PRINT_SCREEN        USES Properties TerminalProperties Current 
+                                ERROR_PRINT_SCREEN LCD_Fill_Rectangle 
+                                STRING.FATAL.SOFTWARE.ERROR.7 printf STRING.ERROR.NUMBER...d.8 
+                                STRING.SEE.LINUX.ERRONO.DOC.9 STRING.IT.S.SAFE.TO.PANIC.10 Timer_Delay_10ms 
+                                STRING.IT.S.SAFE.TO.PANIC.11 
+Accelerometer_INIT        USES STRING.Please.Allow.the.Boa.1 printf 
+                                Analog_Init _ATDDIEN _DDRAD _DDRP _PTP Accelerometer_Read 
+                                anal_z anal_y anal_x STRING...x..d.y..d.z..d.2 
+                                STRING.Analog.Or.Accel.Init.3 STRING.Calibration.Error.pl.4 Accel_X_Zero 
+                                Accel_Y_Zero Accel_Z_Zero STRING....Steady.state.valu.5 
+                                ERROR_PRINT_SCREEN_2 
+Accelerometer_Read        USES anal_x anal_y anal_z _PTP Analog_Read 
+                                Timer_Delay_1ms 
+_LDIVU                    USES _lDivMod 
+_Vector_20                USES SCIhandler 
+_Vector_15                USES TC7handler 
+_Vector_12                USES TC4handler 
+_Vector_10                USES OC2_isr 
+_Vector_9                 USES TC1handler 
+_Vector_8                 USES TC0handler 
+
+*********************************************************************************************
+DEPENDENCY TREE
+*********************************************************************************************
+ main and _Startup Group
+ | 
+ +- main                
+ |  | 
+ |  +- Timer_INIT          
+ |  |    
+ |  +- ILI9327_INIT        
+ |  |  | 
+ |  |  +- ILI9327_INITALIZE   
+ |  |  |  | 
+ |  |  |  +- LCD_Settings        
+ |  |  |  |    
+ |  |  |  +- _BSHL               
+ |  |  |  |    
+ |  |  |  +- Timer_Delay_1ms     
+ |  |  |  |  | 
+ |  |  |  |  +- _ILSEXT             
+ |  |  |  |  |    
+ |  |  |  |  +- ERROR_PRINT_SCREEN_2 (recursive dependency)
+ |  |  |  |     | 
+ |  |  |  |     +- LCD_Fill_Rectangle  
+ |  |  |  |     |  | 
+ |  |  |  |     |  +- ILI9327_Fill_Rectangle
+ |  |  |  |     |     | 
+ |  |  |  |     |     +- Color_Convert       
+ |  |  |  |     |     |    
+ |  |  |  |     |     +- ILI9327_WRITE_COMMAND
+ |  |  |  |     |     |  | 
+ |  |  |  |     |     |  +- ILI9327_WRITE_BUS   
+ |  |  |  |     |     |       
+ |  |  |  |     |     +- ILI9327_ADDRESS_SET 
+ |  |  |  |     |     |  | 
+ |  |  |  |     |     |  +- ILI9327_WRITE_COMMAND (see above)
+ |  |  |  |     |     |  |  
+ |  |  |  |     |     |  +- ILI9327_WRITE_DATA  
+ |  |  |  |     |     |     | 
+ |  |  |  |     |     |     +- ILI9327_WRITE_BUS    (see above)
+ |  |  |  |     |     |        
+ |  |  |  |     |     +- ILI9327_WRITE_DATA   (see above)
+ |  |  |  |     |        
+ |  |  |  |     +- printf              
+ |  |  |  |     |  | 
+ |  |  |  |     |  +- TERMIO_PutChar      
+ |  |  |  |     |  |  | 
+ |  |  |  |     |  |  +- TerminalChar        
+ |  |  |  |     |  |     | 
+ |  |  |  |     |  |     +- LCD_Fill_Rectangle   (see above)
+ |  |  |  |     |  |     |  
+ |  |  |  |     |  |     +- LCD_Write_Line      
+ |  |  |  |     |  |     |  | 
+ |  |  |  |     |  |     |  +- LCD_Write_Char      
+ |  |  |  |     |  |     |     | 
+ |  |  |  |     |  |     |     +- LCD_Fill_Rectangle   (see above)
+ |  |  |  |     |  |     |        
+ |  |  |  |     |  |     +- Terminal_Set_Properties
+ |  |  |  |     |  |     |    
+ |  |  |  |     |  |     +- LCD_Write_Char       (see above)
+ |  |  |  |     |  |        
+ |  |  |  |     |  +- set_printf          
+ |  |  |  |     |  |    
+ |  |  |  |     |  +- vprintf             
+ |  |  |  |     |     | 
+ |  |  |  |     |     +- _out                
+ |  |  |  |     |     |    
+ |  |  |  |     |     +- _CASE_SEARCH_8_BYTE 
+ |  |  |  |     |     |    
+ |  |  |  |     |     +- _CASE_DIRECT_BYTE   
+ |  |  |  |     |     |    
+ |  |  |  |     |     +- _CASE_SEARCH_8      
+ |  |  |  |     |     |    
+ |  |  |  |     |     +- _ILSEXT              (see above)
+ |  |  |  |     |     |  
+ |  |  |  |     |     +- _LNEG               
+ |  |  |  |     |     |    
+ |  |  |  |     |     +- _LCMP_P             
+ |  |  |  |     |          
+ |  |  |  |     +- Timer_Delay_10ms     (recursive dependency)
+ |  |  |  |        | 
+ |  |  |  |        +- ERROR_PRINT_SCREEN_2 (see above) (recursive dependency)
+ |  |  |  |           
+ |  |  |  +- ILI9327_WRITE_COMMAND (see above)
+ |  |  |  |  
+ |  |  |  +- ILI9327_WRITE_DATA   (see above)
+ |  |  |  |  
+ |  |  |  +- Timer_Delay_10ms     (see above) (recursive dependency)
+ |  |  |     
+ |  |  +- terminalemulator    
+ |  |     | 
+ |  |     +- LCD_Fill_Rectangle   (see above)
+ |  |     |  
+ |  |     +- LCD_Write_Line       (see above)
+ |  |     |  
+ |  |     +- Terminal_Set_Properties (see above)
+ |  |        
+ |  +- DCM_INIT            
+ |  |  | 
+ |  |  +- PWM_INIT            
+ |  |       
+ |  +- RC_SERVO_INIT       
+ |  |    
+ |  +- STMOTOR_INIT        
+ |  |    
+ |  +- STMOTOR_FIND_HOME   
+ |  |  | 
+ |  |  +- STMOTOR_COMPLETE_MOTION
+ |  |  |    
+ |  |  +- ERROR_PRINT_SCREEN_2 (see above) (recursive dependency)
+ |  |     
+ |  +- Accelerometer_INIT  
+ |  |  | 
+ |  |  +- printf               (see above)
+ |  |  |  
+ |  |  +- Analog_Init         
+ |  |  |    
+ |  |  +- Accelerometer_Read  
+ |  |  |  | 
+ |  |  |  +- Analog_Read         
+ |  |  |  |    
+ |  |  |  +- Timer_Delay_1ms      (see above)
+ |  |  |     
+ |  |  +- ERROR_PRINT_SCREEN_2 (see above) (recursive dependency)
+ |  |     
+ |  +- Encoder_Init        
+ |  |    
+ |  +- RS232_TEST          
+ |     | 
+ |     +- RS232_INIT          
+ |     |  | 
+ |     |  +- RS232_Init          
+ |     |  |  | 
+ |     |  |  +- _LCMP               
+ |     |  |  |    
+ |     |  |  +- printf               (see above)
+ |     |  |     
+ |     |  +- ERROR_PRINT_SCREEN  
+ |     |     | 
+ |     |     +- LCD_Fill_Rectangle   (see above)
+ |     |     |  
+ |     |     +- printf               (see above)
+ |     |     |  
+ |     |     +- Timer_Delay_10ms     (see above) (recursive dependency)
+ |     |        
+ |     +- ERROR_PRINT_SCREEN_2 (see above) (recursive dependency)
+ |     |  
+ |     +- _BDIVMODU           
+ |     |    
+ |     +- printf               (see above)
+ |     |  
+ |     +- Process_RS232       
+ |     |  | 
+ |     |  +- _CASE_CHECKED_BYTE  
+ |     |       
+ |     +- _CASE_CHECKED_BYTE   (see above)
+ |     |  
+ |     +- RS232_ECD           
+ |     |  | 
+ |     |  +- terminalemulator     (see above)
+ |     |  |  
+ |     |  +- printf               (see above)
+ |     |  |  
+ |     |  +- RS232_Read          
+ |     |       
+ |     +- DC_Motor_ECD        
+ |     |  | 
+ |     |  +- ASCII_TO_DECIMAL    
+ |     |  |    
+ |     |  +- printf               (see above)
+ |     |  |  
+ |     |  +- _BDIVMODU            (see above)
+ |     |  |  
+ |     |  +- PWM_PERCENTAGE_CONVERSION
+ |     |     | 
+ |     |     +- _ILSEXT              (see above)
+ |     |     |  
+ |     |     +- _LDIVU              
+ |     |        | 
+ |     |        +- _lDivMod            
+ |     |             
+ |     +- Camera_ECD          
+ |     |  | 
+ |     |  +- ASCII_TO_DECIMAL     (see above)
+ |     |  |  
+ |     |  +- STMOTOR_MOVE_DEGREES
+ |     |  |  | 
+ |     |  |  +- STMOTOR_COMPLETE_MOTION (see above)
+ |     |  |     
+ |     |  +- _BDIVMODU            (see above)
+ |     |  |  
+ |     |  +- RCServo_Set_Degrees_Sweep
+ |     |     | 
+ |     |     +- RCServo_Degrees_Calulate
+ |     |     |  | 
+ |     |     |  +- _BDIVMODU            (see above)
+ |     |     |     
+ |     |     +- Timer_Delay_10ms     (see above) (recursive dependency)
+ |     |        
+ |     +- Ping_ECD            
+ |     |  | 
+ |     |  +- printf               (see above)
+ |     |  |  
+ |     |  +- RS232_Write         
+ |     |  |    
+ |     |  +- RS232_Write_String  
+ |     |     | 
+ |     |     +- RS232_Write          (see above)
+ |     |        
+ |     +- LCD_Fill_Rectangle   (see above)
+ |        
+ +- _Startup            
+    | 
+    +- Init                
+    |    
+    +- main                 (see above)
+       
+ _Vector_20          
+ | 
+ +- SCIhandler          
+    | 
+    +- RS232_Write          (see above)
+       
+ _Vector_15          
+ | 
+ +- TC7handler          
+    | 
+    +- _BDIVMODU            (see above)
+       
+ _Vector_8           
+ | 
+ +- TC0handler          
+      
+ _Vector_9           
+ | 
+ +- TC1handler          
+      
+ _Vector_12          
+ | 
+ +- TC4handler          
+      
+ _Vector_10          
+ | 
+ +- OC2_isr             
+      
+*********************************************************************************************
+STATISTIC SECTION
+---------------------------------------------------------------------------------------------
+
+ExeFile:
+--------
+Number of blocks to be downloaded: 12
+Total size of all blocks to be downloaded: 8698
+
