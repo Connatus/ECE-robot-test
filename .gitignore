@@ -41,3 +41,10 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.o
+ILI9327/bin/Project.map
+*.s19
+ILI9327/bin/Project.abs.phy
+*.phy
+ILI9327/bin/Project.abs.s19
+ILI9327/bin/Project.abs.s19
