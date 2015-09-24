@@ -49,7 +49,7 @@ extern void process_joystick_event(struct js_event *jse,struct js_event_processe
     {
 
         jsep->Axis = (jse->number + 1);  /// increment by 1
-        jsep->Axis_Value = ((jse->value) /328) ;
+        jsep->Axis_Value = ((jse->value) /327) ;
 
         if(jsep->Axis_Value <= 30 || jsep->Axis_Value >= -30)
             jsep->Axis_Value = 0;
