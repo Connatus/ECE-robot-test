@@ -41,6 +41,7 @@ int main (int argc, char *argv[])
           //  wjse.process_data = 0;
 
         }
+        Process_Motor(&jsep);
     }
 }
 

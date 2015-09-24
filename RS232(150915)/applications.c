@@ -127,10 +127,11 @@ void Process_Motor(struct js_event_processed *jsep){
     Axis = jsep->Axis;
     Axis_Value= jsep->Axis_Value;
 
-        printf("PROCESS MOTOR");
-        printf("\n RS: %d %d \n LS: %d %d \n PS: %d %d", jsep->stickR_x, jsep->stickR_y, jsep->stickL_x, jsep->stickL_y, jsep->Pad_x, jsep->Pad_y);
+        //printf("PROCESS MOTOR");
+        //printf("\n RS: %d %d \n LS: %d %d \n PS: %d %d", jsep->stickR_x, jsep->stickR_y, jsep->stickL_x, jsep->stickL_y, jsep->Pad_x, jsep->Pad_y);
         /// negative = forward in y
         /// Move forward // move backward
+      /*
         if(jsep->stickL_y < 0){
              DC_R_Direction_Y  = 'F';
              DC_L_Direction_Y  = 'F';
@@ -163,8 +164,18 @@ void Process_Motor(struct js_event_processed *jsep){
                 printf("SPEED: %d %d", Motor_Parameters_Node.L_Speed, Motor_Parameters_Node.R_Speed);
         }
 
-
-
+    */
+        //printf("SPEED: %d %d\n", Motor_Parameters_Node.L_Speed, Motor_Parameters_Node.R_Speed);
+        Motor_Parameters_Node.L_Speed  =((jsep->stickL_y*(-1))+jsep->stickL_x);
+        Motor_Parameters_Node.R_Speed  =((jsep->stickL_y*(-1))-jsep->stickL_x);
+        if(Motor_Parameters_Node.L_Speed==0)
+            DC_L_Break='1';
+        else
+            DC_L_Break='0';
+        if(Motor_Parameters_Node.R_Speed==0)
+            DC_R_Break='1';
+        else
+            DC_R_Break='0';
         strncpy(RS232_Message_Node.Transmission_String,RS232_Transmission_String, sizeof(RS232_Transmission_String) );
         RS232_Message_Node.RS232_Com_PORT = (RS232_COMPORT +0x30);
         RS232_Message_Node.Board_Function = (Board_Function_Motor+0x30);
@@ -174,20 +185,41 @@ void Process_Motor(struct js_event_processed *jsep){
       //  Motor_Parameters_Node.R_Speed = 100;
       //  Motor_Parameters_Node.L_Speed = 100;
 
+   // printf("%d    %d\n",(abs(Motor_Parameters_Node.R_Speed)),Motor_Parameters_Node.R_Speed);
+        if((abs(Motor_Parameters_Node.R_Speed))<100){
+            Motor_Direction_R = Int_to_Array_2((abs(Motor_Parameters_Node.R_Speed)),3);}
+        else
+            Motor_Direction_R = Int_to_Array_2(100,3);
 
 
-        Motor_Direction_R = Int_to_Array_2((Motor_Parameters_Node.R_Speed),3);
+
+
+        if(Motor_Parameters_Node.L_Speed>0){
+            DC_L_Direction_Y='F';}
+        else
+            DC_L_Direction_Y='B';
+
+
+        if(Motor_Parameters_Node.R_Speed>0){
+            DC_R_Direction_Y='F';}
+        else
+            DC_R_Direction_Y='B';
+
+
         strcpy(RS232_Message_Node.MessageStorageArray, Motor_Direction_R);
 
         Motor_Direction_R[0] = DC_R_Break;
+
         Motor_Direction_R[1] = DC_R_Direction_Y;
+
         Motor_Direction_R[2] = '0';
 
         strcat(RS232_Message_Node.MessageStorageArray, Motor_Direction_R);
 
-
-
-        Motor_Direction_L = Int_to_Array_2((Motor_Parameters_Node.L_Speed),3);
+        if((abs(Motor_Parameters_Node.L_Speed))<100){
+            Motor_Direction_L = Int_to_Array_2((abs(Motor_Parameters_Node.L_Speed)),3);}
+        else
+            Motor_Direction_L = Int_to_Array_2(100,3);//Motor_Direction_L = Int_to_Array_2((abs(Motor_Parameters_Node.L_Speed)),3);
 
        strcat(RS232_Message_Node.MessageStorageArray, Motor_Direction_L);
         Motor_Direction_L[0] =  DC_L_Break;

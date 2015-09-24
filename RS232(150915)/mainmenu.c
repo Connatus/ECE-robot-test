@@ -20,7 +20,7 @@
 
                 if ((option>= 1)&& (option <= NUMBEROFAPPLICATIONS )){
 
-                    (*function_pointer[(option-1)])(&jsep);
+                    (*function_pointer[(option-1)])( jsep);
                 }
 
                 /// LOad the specific STEPPER MOTOR APPLICATION

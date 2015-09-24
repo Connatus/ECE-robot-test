@@ -29,8 +29,8 @@ struct DC_Motor_Parameters{
 
 /// NOT SET
 struct Motor_Parameters{
-    unsigned int  R_Speed; // Stepper speed
-    unsigned int  L_Speed; // RC Servo Speed
+    signed int  R_Speed; //  Right Motor speed
+    signed int  L_Speed; // Left Motor Speed
     unsigned char R_Direction;
     unsigned char L_Direction;
 };
